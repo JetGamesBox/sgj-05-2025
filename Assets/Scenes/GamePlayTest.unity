@@ -1360,6 +1360,14 @@ PrefabInstance:
       propertyPath: updateInTime
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4517305977107515372, guid: a61c77aeee3997846af4f255b8e875ed, type: 3}
+      propertyPath: m_Mass
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517305977107515372, guid: a61c77aeee3997846af4f255b8e875ed, type: 3}
+      propertyPath: m_LinearDrag
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 4703588483764889105, guid: a61c77aeee3997846af4f255b8e875ed, type: 3}
       propertyPath: m_Name
       value: SomeMovable
