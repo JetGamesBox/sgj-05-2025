@@ -6,11 +6,16 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float speed = 10f;
 
-    private Vector2 direction = Vector2.zero;
+    private Rigidbody2D rb;
+
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
 
     void Update()
     {
-        direction = Vector2.zero;
+        Vector2 direction = Vector2.zero;
 
         if (Input.GetKey(KeyCode.W))
             direction += Vector2.up;
@@ -26,6 +31,8 @@ public class PlayerController : MonoBehaviour
 
         direction.Normalize();
 
-        transform.position += (Vector3)direction * speed * Time.deltaTime;
+        rb.velocity = direction * speed;
+
+
     }
 }
