@@ -39,4 +39,9 @@ public class SceneController : MonoBehaviour
     {
         callBack.Invoke();
     }
+
+    public void ShowDialog(string message)
+    {
+        catDialog.Show(message);
+    }
 }

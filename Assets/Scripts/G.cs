@@ -57,4 +57,9 @@ public static class G
         G.input.Blocked = true;
         currentScene.Disappear(() => { SceneManager.LoadScene(scene.ToString()); });
     }
+
+    public static void ShowSceneDialog(string message)
+    {
+        currentScene.ShowDialog(message);
+    }
 }
