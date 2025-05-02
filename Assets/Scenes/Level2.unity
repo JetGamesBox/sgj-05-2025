@@ -5187,6 +5187,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1856165098}
     m_Modifications:
+    - target: {fileID: 688696336308745781, guid: f57f87434327bb744ac9038d460234fb, type: 3}
+      propertyPath: sceneController
+      value: 
+      objectReference: {fileID: 27683853}
     - target: {fileID: 4861762120044647562, guid: f57f87434327bb744ac9038d460234fb, type: 3}
       propertyPath: m_Name
       value: CompleteLevelTrigger
