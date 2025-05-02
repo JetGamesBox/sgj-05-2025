@@ -350,7 +350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 0}
+  sceneController: {fileID: 1063618087}
   index: -1
 --- !u!61 &71983010
 BoxCollider2D:
@@ -639,7 +639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 0}
+  sceneController: {fileID: 1063618087}
   index: 1
 --- !u!61 &122045472
 BoxCollider2D:
@@ -784,7 +784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 0}
+  sceneController: {fileID: 1063618087}
   index: -1
 --- !u!61 &127408913
 BoxCollider2D:
@@ -911,8 +911,8 @@ Transform:
   m_GameObject: {fileID: 198765397}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.672907, y: -49.41976, z: 0.11387223}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 12.54, y: -48.52, z: 0.11387223}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1856165098}
@@ -1063,7 +1063,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 0}
+  sceneController: {fileID: 1063618087}
   index: 2
 --- !u!61 &233188574
 BoxCollider2D:
@@ -1352,7 +1352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 0}
+  sceneController: {fileID: 1063618087}
   index: -1
 --- !u!61 &249819912
 BoxCollider2D:
@@ -1538,7 +1538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 0}
+  sceneController: {fileID: 1063618087}
   index: -1
 --- !u!61 &279229252
 BoxCollider2D:
@@ -1683,7 +1683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 0}
+  sceneController: {fileID: 1063618087}
   index: 0
 --- !u!61 &303900617
 BoxCollider2D:
@@ -1756,7 +1756,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.127093, y: -52.24976, z: 0.11387223}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 2.8, y: 2.8, z: 2.8}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1529840353}
@@ -2050,7 +2050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feafd599df26f86409245991acff2e96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 0}
+  sceneController: {fileID: 1063618087}
 --- !u!1 &649118298
 GameObject:
   m_ObjectHideFlags: 0
@@ -2149,7 +2149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 0}
+  sceneController: {fileID: 1063618087}
   index: 6
 --- !u!61 &649118302
 BoxCollider2D:
@@ -2294,7 +2294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 0}
+  sceneController: {fileID: 1063618087}
   index: 8
 --- !u!61 &735479377
 BoxCollider2D:
@@ -2439,7 +2439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 0}
+  sceneController: {fileID: 1063618087}
   index: 7
 --- !u!61 &792229757
 BoxCollider2D:
@@ -2584,7 +2584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 0}
+  sceneController: {fileID: 1063618087}
   index: -1
 --- !u!61 &801961179
 BoxCollider2D:
@@ -2729,7 +2729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 0}
+  sceneController: {fileID: 1063618087}
   index: -1
 --- !u!61 &826397416
 BoxCollider2D:
@@ -2874,7 +2874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 0}
+  sceneController: {fileID: 1063618087}
   index: -1
 --- !u!61 &841397535
 BoxCollider2D:
@@ -3149,7 +3149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 0}
+  sceneController: {fileID: 1063618087}
   index: 3
 --- !u!61 &951359571
 BoxCollider2D:
@@ -3294,7 +3294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 0}
+  sceneController: {fileID: 1063618087}
   index: -1
 --- !u!61 &992239699
 BoxCollider2D:
@@ -3439,7 +3439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 0}
+  sceneController: {fileID: 1063618087}
   index: 9
 --- !u!61 &1017506438
 BoxCollider2D:
@@ -3746,6 +3746,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1063618084 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2942016939451564012, guid: 1f9d8ff605979c34d9c0da792abdcbf2, type: 3}
+  m_PrefabInstance: {fileID: 1708067797}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1063618087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063618084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9485c330e8d989419d28d2481683a32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioMixer: {fileID: 0}
+  movableObject: {fileID: 1101885279}
+  tiles: {fileID: 402241030}
+  hatMaster: {fileID: 198765397}
+--- !u!61 &1101885279 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 410872297764193372, guid: a61c77aeee3997846af4f255b8e875ed, type: 3}
+  m_PrefabInstance: {fileID: 2075146696}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1102204294
 GameObject:
   m_ObjectHideFlags: 0
@@ -3988,7 +4014,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 0}
+  sceneController: {fileID: 1063618087}
   index: 4
 --- !u!61 &1203352192
 BoxCollider2D:
@@ -4133,7 +4159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 0}
+  sceneController: {fileID: 1063618087}
   index: -1
 --- !u!61 &1327349106
 BoxCollider2D:
@@ -4278,7 +4304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 0}
+  sceneController: {fileID: 1063618087}
   index: -1
 --- !u!61 &1333066212
 BoxCollider2D:
@@ -4567,7 +4593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 0}
+  sceneController: {fileID: 1063618087}
   index: -1
 --- !u!61 &1461951198
 BoxCollider2D:
@@ -4712,7 +4738,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 0}
+  sceneController: {fileID: 1063618087}
   index: -1
 --- !u!61 &1526066272
 BoxCollider2D:
@@ -5033,7 +5059,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 0}
+  sceneController: {fileID: 1063618087}
   index: -1
 --- !u!61 &1690745458
 BoxCollider2D:
@@ -5132,10 +5158,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: SceneController
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6896861096172510808, guid: 1f9d8ff605979c34d9c0da792abdcbf2, type: 3}
+      propertyPath: orthographic size
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 845066057626674241, guid: 1f9d8ff605979c34d9c0da792abdcbf2, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2942016939451564012, guid: 1f9d8ff605979c34d9c0da792abdcbf2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1063618087}
   m_SourcePrefab: {fileID: 100100000, guid: 1f9d8ff605979c34d9c0da792abdcbf2, type: 3}
 --- !u!1001 &1711821025
 PrefabInstance:
@@ -5148,7 +5182,7 @@ PrefabInstance:
     - target: {fileID: 688696336308745781, guid: f57f87434327bb744ac9038d460234fb, type: 3}
       propertyPath: sceneController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1063618087}
     - target: {fileID: 4861762120044647562, guid: f57f87434327bb744ac9038d460234fb, type: 3}
       propertyPath: m_Name
       value: CompleteLevelTrigger
@@ -5301,7 +5335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 0}
+  sceneController: {fileID: 1063618087}
   index: 5
 --- !u!61 &1731923671
 BoxCollider2D:
@@ -5619,7 +5653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 0}
+  sceneController: {fileID: 1063618087}
   index: -1
 --- !u!61 &1839259643
 BoxCollider2D:
@@ -5884,23 +5918,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5683891503132751008, guid: a61c77aeee3997846af4f255b8e875ed, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.99999994
+      value: 2.25
       objectReference: {fileID: 0}
     - target: {fileID: 5683891503132751008, guid: a61c77aeee3997846af4f255b8e875ed, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.99999994
+      value: 2.25
       objectReference: {fileID: 0}
     - target: {fileID: 5683891503132751008, guid: a61c77aeee3997846af4f255b8e875ed, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.99999994
+      value: 2.25
       objectReference: {fileID: 0}
     - target: {fileID: 5683891503132751008, guid: a61c77aeee3997846af4f255b8e875ed, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.52
+      value: -9.15
       objectReference: {fileID: 0}
     - target: {fileID: 5683891503132751008, guid: a61c77aeee3997846af4f255b8e875ed, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.14
+      value: 0.56
       objectReference: {fileID: 0}
     - target: {fileID: 5683891503132751008, guid: a61c77aeee3997846af4f255b8e875ed, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6037,7 +6071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 0}
+  sceneController: {fileID: 1063618087}
   index: -1
 --- !u!61 &2084583224
 BoxCollider2D:
