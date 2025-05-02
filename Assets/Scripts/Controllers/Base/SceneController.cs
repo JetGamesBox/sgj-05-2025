@@ -9,27 +9,16 @@ public class SceneController : MonoBehaviour
 {
     protected CatDialogController catDialog;
     [HideInInspector] public AudioMixer audioMixer;
+    protected PlayerController player;
 
     protected virtual void Awake()
     {
         catDialog = transform.Find("Interface")?.Find("CatDialogController")?.GetComponent<CatDialogController>();
         audioMixer = GetComponent<AudioMixer>();
 
-        Transform vc = transform.Find("VirtualCamera");
-
-        PlayerController player = FindAnyObjectByType<PlayerController>();
-
-        if (player != null )
-            vc.GetComponent<CinemachineVirtualCamera>().Follow = player.transform;
-
-        foreach (GameObject go in GameObject.FindGameObjectsWithTag("WorldBoundary"))
-        {
-            PolygonCollider2D worldBoundary = go.GetComponent<PolygonCollider2D>();
-            vc.GetComponent<CinemachineConfiner2D>().m_BoundingShape2D = worldBoundary;
-            break;
-        }
+        player = FindAnyObjectByType<PlayerController>();
         
-        G.OnSceneAwake(this);
+        G.OnSceneAwake(this, player.transform);
     }
 
     protected virtual void Update()
