@@ -2,19 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class InputController
 {
-    [SerializeField] private float speed = 10f;
+    public Vector2 movementVector { get; private set; }
+    public bool Blocked { get; set; }
 
-    private Rigidbody2D rb;
-
-    private void Awake()
+    public void Update()
     {
-        rb = GetComponent<Rigidbody2D>();
-    }
+        if (Blocked)
+            return;
 
-    void Update()
-    {
         Vector2 direction = Vector2.zero;
 
         if (Input.GetKey(KeyCode.W))
@@ -30,9 +27,5 @@ public class PlayerController : MonoBehaviour
             direction += Vector2.right;
 
         direction.Normalize();
-
-        rb.velocity = direction * speed;
-
-
     }
 }
