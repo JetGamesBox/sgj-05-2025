@@ -6,26 +6,30 @@ public class InputController
 {
     public Vector2 movementVector { get; private set; }
     public bool Blocked { get; set; }
+    public InputController()
+    {
+        Blocked = false;
+    }
 
     public void Update()
     {
         if (Blocked)
             return;
 
-        Vector2 direction = Vector2.zero;
+        movementVector = Vector2.zero;
 
         if (Input.GetKey(KeyCode.W))
-            direction += Vector2.up;
+            movementVector += Vector2.up;
 
         if (Input.GetKey(KeyCode.S))
-            direction += Vector2.down;
+            movementVector += Vector2.down;
 
         if (Input.GetKey(KeyCode.A))
-            direction += Vector2.left;
+            movementVector += Vector2.left;
 
         if (Input.GetKey(KeyCode.D))
-            direction += Vector2.right;
+            movementVector += Vector2.right;
 
-        direction.Normalize();
+        movementVector.Normalize();
     }
 }

@@ -14,6 +14,6 @@ public class GamePlayTestController : SceneController
     private IEnumerator ShowDialogTest()
     {
         yield return new WaitForSeconds(3f);
-        catDialogController.Show("Тестовое сообщение 1$$$И еще одно сообщение!");
+        catDialogController?.Show("Тестовое сообщение 1$$$И еще одно сообщение!");
     }
 }
