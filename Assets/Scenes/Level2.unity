@@ -149,7 +149,7 @@ Transform:
   m_GameObject: {fileID: 17938161}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.5, y: -7.5, z: 0}
+  m_LocalPosition: {x: -18, y: -7.5, z: 0}
   m_LocalScale: {x: 2, y: 8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -252,27 +252,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &27683850 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2942016939451564012, guid: 1f9d8ff605979c34d9c0da792abdcbf2, type: 3}
-  m_PrefabInstance: {fileID: 1708067797}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &27683853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 27683850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9485c330e8d989419d28d2481683a32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioMixer: {fileID: 0}
-  movableObject: {fileID: 1408976846}
-  tiles: {fileID: 402241030}
-  hatMaster: {fileID: 198765397}
 --- !u!1 &71983006
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,7 +350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 27683853}
+  sceneController: {fileID: 0}
   index: -1
 --- !u!61 &71983010
 BoxCollider2D:
@@ -446,8 +425,8 @@ Transform:
   m_GameObject: {fileID: 88325366}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 10.5, z: 0}
-  m_LocalScale: {x: 2, y: 30, z: 1}
+  m_LocalPosition: {x: 0.3912, y: 10.5, z: 0}
+  m_LocalScale: {x: 2, y: 38.37763, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1790655716}
@@ -660,7 +639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 27683853}
+  sceneController: {fileID: 0}
   index: 1
 --- !u!61 &122045472
 BoxCollider2D:
@@ -805,7 +784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 27683853}
+  sceneController: {fileID: 0}
   index: -1
 --- !u!61 &127408913
 BoxCollider2D:
@@ -1084,7 +1063,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 27683853}
+  sceneController: {fileID: 0}
   index: 2
 --- !u!61 &233188574
 BoxCollider2D:
@@ -1159,8 +1138,8 @@ Transform:
   m_GameObject: {fileID: 245021747}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -10.5, z: 0}
-  m_LocalScale: {x: 2, y: 30, z: 1}
+  m_LocalPosition: {x: 1.2357, y: -10.5, z: 0}
+  m_LocalScale: {x: 2, y: 38.080044, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1790655716}
@@ -1373,7 +1352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 27683853}
+  sceneController: {fileID: 0}
   index: -1
 --- !u!61 &249819912
 BoxCollider2D:
@@ -1445,7 +1424,7 @@ Transform:
   m_GameObject: {fileID: 251114281}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.5, y: -0.23000082, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1559,7 +1538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 27683853}
+  sceneController: {fileID: 0}
   index: -1
 --- !u!61 &279229252
 BoxCollider2D:
@@ -1704,7 +1683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 27683853}
+  sceneController: {fileID: 0}
   index: 0
 --- !u!61 &303900617
 BoxCollider2D:
@@ -1812,8 +1791,8 @@ Transform:
   m_GameObject: {fileID: 410704606}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -30, y: 4.5, z: 0}
-  m_LocalScale: {x: 2, y: 30, z: 1}
+  m_LocalPosition: {x: -31.3379, y: 4.5, z: 0}
+  m_LocalScale: {x: 2, y: 27.323711, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1790655716}
@@ -2071,7 +2050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feafd599df26f86409245991acff2e96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 27683853}
+  sceneController: {fileID: 0}
 --- !u!1 &649118298
 GameObject:
   m_ObjectHideFlags: 0
@@ -2170,7 +2149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 27683853}
+  sceneController: {fileID: 0}
   index: 6
 --- !u!61 &649118302
 BoxCollider2D:
@@ -2315,7 +2294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 27683853}
+  sceneController: {fileID: 0}
   index: 8
 --- !u!61 &735479377
 BoxCollider2D:
@@ -2460,7 +2439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 27683853}
+  sceneController: {fileID: 0}
   index: 7
 --- !u!61 &792229757
 BoxCollider2D:
@@ -2605,7 +2584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 27683853}
+  sceneController: {fileID: 0}
   index: -1
 --- !u!61 &801961179
 BoxCollider2D:
@@ -2750,7 +2729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 27683853}
+  sceneController: {fileID: 0}
   index: -1
 --- !u!61 &826397416
 BoxCollider2D:
@@ -2895,7 +2874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 27683853}
+  sceneController: {fileID: 0}
   index: -1
 --- !u!61 &841397535
 BoxCollider2D:
@@ -3170,7 +3149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 27683853}
+  sceneController: {fileID: 0}
   index: 3
 --- !u!61 &951359571
 BoxCollider2D:
@@ -3315,7 +3294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 27683853}
+  sceneController: {fileID: 0}
   index: -1
 --- !u!61 &992239699
 BoxCollider2D:
@@ -3460,7 +3439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 27683853}
+  sceneController: {fileID: 0}
   index: 9
 --- !u!61 &1017506438
 BoxCollider2D:
@@ -3534,7 +3513,7 @@ Transform:
   m_GameObject: {fileID: 1021895304}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.5, y: 7.5, z: 0}
+  m_LocalPosition: {x: -18, y: 7.5, z: 0}
   m_LocalScale: {x: 2, y: 8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3664,7 +3643,7 @@ Transform:
   m_GameObject: {fileID: 1056690707}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.5, y: 7.5, z: 0}
+  m_LocalPosition: {x: 20, y: 7.5, z: 0}
   m_LocalScale: {x: 2, y: 8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3795,8 +3774,8 @@ Transform:
   m_GameObject: {fileID: 1102204294}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 30, y: -4.5, z: 0}
-  m_LocalScale: {x: 2, y: 30, z: 1}
+  m_LocalPosition: {x: 31.9911, y: -4.5, z: 0}
+  m_LocalScale: {x: 2, y: 26.019, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1790655716}
@@ -4009,7 +3988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 27683853}
+  sceneController: {fileID: 0}
   index: 4
 --- !u!61 &1203352192
 BoxCollider2D:
@@ -4154,7 +4133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 27683853}
+  sceneController: {fileID: 0}
   index: -1
 --- !u!61 &1327349106
 BoxCollider2D:
@@ -4299,7 +4278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 27683853}
+  sceneController: {fileID: 0}
   index: -1
 --- !u!61 &1333066212
 BoxCollider2D:
@@ -4374,8 +4353,8 @@ Transform:
   m_GameObject: {fileID: 1356398410}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 30, y: 4.5, z: 0}
-  m_LocalScale: {x: 2, y: 30, z: 1}
+  m_LocalPosition: {x: 32.323, y: 4.5, z: 0}
+  m_LocalScale: {x: 2, y: 25.352999, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1790655716}
@@ -4490,11 +4469,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &1408976846 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 410872297764193372, guid: a61c77aeee3997846af4f255b8e875ed, type: 3}
-  m_PrefabInstance: {fileID: 2075146696}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1461951194
 GameObject:
   m_ObjectHideFlags: 0
@@ -4593,7 +4567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 27683853}
+  sceneController: {fileID: 0}
   index: -1
 --- !u!61 &1461951198
 BoxCollider2D:
@@ -4738,7 +4712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 27683853}
+  sceneController: {fileID: 0}
   index: -1
 --- !u!61 &1526066272
 BoxCollider2D:
@@ -4810,7 +4784,7 @@ Transform:
   m_GameObject: {fileID: 1529840352}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.5, y: -0.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5059,7 +5033,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 27683853}
+  sceneController: {fileID: 0}
   index: -1
 --- !u!61 &1690745458
 BoxCollider2D:
@@ -5158,26 +5132,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SceneController
       objectReference: {fileID: 0}
-    - target: {fileID: 5618768163925275755, guid: 1f9d8ff605979c34d9c0da792abdcbf2, type: 3}
-      propertyPath: m_XDamping
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5618768163925275755, guid: 1f9d8ff605979c34d9c0da792abdcbf2, type: 3}
-      propertyPath: m_YDamping
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5618768163925275755, guid: 1f9d8ff605979c34d9c0da792abdcbf2, type: 3}
-      propertyPath: m_LookaheadSmoothing
-      value: 30
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 845066057626674241, guid: 1f9d8ff605979c34d9c0da792abdcbf2, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2942016939451564012, guid: 1f9d8ff605979c34d9c0da792abdcbf2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 27683853}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f9d8ff605979c34d9c0da792abdcbf2, type: 3}
 --- !u!1001 &1711821025
 PrefabInstance:
@@ -5190,14 +5148,14 @@ PrefabInstance:
     - target: {fileID: 688696336308745781, guid: f57f87434327bb744ac9038d460234fb, type: 3}
       propertyPath: sceneController
       value: 
-      objectReference: {fileID: 27683853}
+      objectReference: {fileID: 0}
     - target: {fileID: 4861762120044647562, guid: f57f87434327bb744ac9038d460234fb, type: 3}
       propertyPath: m_Name
       value: CompleteLevelTrigger
       objectReference: {fileID: 0}
     - target: {fileID: 5618261651281708656, guid: f57f87434327bb744ac9038d460234fb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.19
+      value: 18.14
       objectReference: {fileID: 0}
     - target: {fileID: 5618261651281708656, guid: f57f87434327bb744ac9038d460234fb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5343,7 +5301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 27683853}
+  sceneController: {fileID: 0}
   index: 5
 --- !u!61 &1731923671
 BoxCollider2D:
@@ -5460,7 +5418,7 @@ Transform:
   m_GameObject: {fileID: 1836477510}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.5, y: -7.5, z: 0}
+  m_LocalPosition: {x: 20, y: -7.5, z: 0}
   m_LocalScale: {x: 2, y: 8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5661,7 +5619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 27683853}
+  sceneController: {fileID: 0}
   index: -1
 --- !u!61 &1839259643
 BoxCollider2D:
@@ -5772,8 +5730,8 @@ Transform:
   m_GameObject: {fileID: 2051276523}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -30, y: -4.5, z: 0}
-  m_LocalScale: {x: 2, y: 30, z: 1}
+  m_LocalPosition: {x: -31.3636, y: -4.5, z: 0}
+  m_LocalScale: {x: 2, y: 27.273, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1790655716}
@@ -5896,6 +5854,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 410872297764193372, guid: a61c77aeee3997846af4f255b8e875ed, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 410872297764193372, guid: a61c77aeee3997846af4f255b8e875ed, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 410872297764193372, guid: a61c77aeee3997846af4f255b8e875ed, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 410872297764193372, guid: a61c77aeee3997846af4f255b8e875ed, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.14
+      objectReference: {fileID: 0}
     - target: {fileID: 2532391302394730020, guid: a61c77aeee3997846af4f255b8e875ed, type: 3}
       propertyPath: updateInTime
       value: 1
@@ -5926,7 +5900,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5683891503132751008, guid: a61c77aeee3997846af4f255b8e875ed, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.15
+      value: -0.14
       objectReference: {fileID: 0}
     - target: {fileID: 5683891503132751008, guid: a61c77aeee3997846af4f255b8e875ed, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6063,7 +6037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bc77371d65db641bb0e7b0a6d9256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneController: {fileID: 27683853}
+  sceneController: {fileID: 0}
   index: -1
 --- !u!61 &2084583224
 BoxCollider2D:
