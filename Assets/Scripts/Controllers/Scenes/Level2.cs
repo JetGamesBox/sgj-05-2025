@@ -104,6 +104,7 @@ public class Level2Controller : SceneController
 
     public override void OnLevelCompleteTrigger()
     {
-        G.SwitchScene(Scenes.Level3);
+        if (testFinished)
+            G.SwitchScene(Scenes.Level3);
     }
 }
