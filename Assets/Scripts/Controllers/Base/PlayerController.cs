@@ -15,6 +15,9 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        rb.velocity = G.input.movementVector * speed;
+        Vector2 newVelocity = G.input.movementVector * speed;
+
+        if (!Vector2.Equals(newVelocity, rb.velocity))
+            rb.velocity = newVelocity;
     }
 }
