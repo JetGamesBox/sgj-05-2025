@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8451717913535998838}
   - component: {fileID: 688696336308745781}
   m_Layer: 0
-  m_Name: CompleteLevelTrigger
+  m_Name: EventSceneTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

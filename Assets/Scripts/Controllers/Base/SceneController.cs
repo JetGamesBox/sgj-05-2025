@@ -26,7 +26,7 @@ public class SceneController : MonoBehaviour
         G.Update();
     }
 
-    public virtual void OnLevelCompleteTrigger()
+    public virtual void OnSceneEvent(string eventName)
     {
     }
 

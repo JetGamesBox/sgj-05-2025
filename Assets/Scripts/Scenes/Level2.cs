@@ -103,7 +103,7 @@ public class Level2Controller : SceneController
             StartCoroutine(CutSceneTestEnd());
     }
 
-    public override void OnLevelCompleteTrigger()
+    public override void OnSceneEvent(string eventName)
     {
         if (testFinished)
             G.SwitchScene(Scenes.Level3);

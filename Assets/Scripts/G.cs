@@ -12,7 +12,7 @@ using Transform = UnityEngine.Transform;
 
 public static class G
 {
-    private static SceneController currentScene;
+    public static SceneController currentScene { get; private set; }
     private static CinemachineVirtualCamera currentCamera;
 
     public static InputController input = new InputController();

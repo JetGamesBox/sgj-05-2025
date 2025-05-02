@@ -4,16 +4,22 @@ using UnityEngine;
 
 public class LevelEndTrigger : MonoBehaviour
 {
-    [SerializeField] private SceneController sceneController;
+    private SceneController sceneController;
+    [SerializeField] private string eventName = "LevelComplete";
     [SerializeField] private bool once = true;
 
     private bool triggered = false;
-    
+
+    private void Awake()
+    {
+        sceneController = G.currentScene;
+    }
+
     private void Triger()
     {
         if (!triggered)
         {
-            sceneController.OnLevelCompleteTrigger();
+            sceneController.OnSceneEvent(eventName);
             triggered = once;
         }
     }

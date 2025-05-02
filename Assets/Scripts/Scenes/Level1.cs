@@ -9,8 +9,6 @@ public class Level1Controller : SceneController
     [SerializeField] private Transform focusPointBegin;
     [SerializeField] private Transform completeTrigger;
 
-    private bool dialog = false;
-
     protected override void Awake()
     {
         base.Awake();
@@ -41,20 +39,17 @@ public class Level1Controller : SceneController
         yield return new WaitForSeconds(6f);
 
         G.CameraFocus(focusPointBegin);
-        G.ShowSceneDialog(DialogPersones.Cat, "Впереди лабиринт, и в конце первый архиватор!$$$Вперед!", 2.5f);
+        G.ShowSceneDialog(DialogPersones.Cat, "Впереди лабиринт, и в конце первый архиватор!$$$Вперед!", 2f);
 
         yield return new WaitForSeconds(6f);
 
         G.CameraFocus(player.transform);
-        G.ShowSceneDialog(DialogPersones.Alice, "Поняла!");
 
         G.input.Blocked = false;
     }
 
-    private IEnumerator CutSceneLevelComplete()
+    private IEnumerator CutSceneWormDialog()
     {
-        dialog = true;
-
         G.input.Blocked = true;
 
         G.CameraFocus(worm);
@@ -73,12 +68,13 @@ public class Level1Controller : SceneController
         G.input.Blocked = false;
     }
 
-    public override void OnLevelCompleteTrigger()
+    public override void OnSceneEvent(string eventName)
     {
-        if (!dialog)
-            StartCoroutine(CutSceneLevelComplete());
-        else
-            G.SwitchScene(Scenes.Level2);
+        switch (eventName)
+        {
+            case "WormDialog": StartCoroutine(CutSceneWormDialog()); break;
+            case "LevelComplete": G.SwitchScene(Scenes.Level2); break;
+        }            
     }
 
 }
