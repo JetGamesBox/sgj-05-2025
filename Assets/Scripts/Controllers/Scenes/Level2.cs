@@ -98,8 +98,7 @@ public class Level2Controller : SceneController
 
         if (++currentOrder != index)
             ResetTest();
-
-        if (index == targetOrder)
+        else if (index == targetOrder)
             StartCoroutine(CutSceneTestEnd());
     }
 
