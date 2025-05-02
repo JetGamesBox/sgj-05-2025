@@ -30,13 +30,14 @@ public class SceneController : MonoBehaviour
     {
     }
 
-    public virtual void Appear(Action callBack)
+    public virtual void Appear()
     {
-        callBack.Invoke();
+        G.input.Blocked = false;
     }
 
     public virtual void Disappear(Action callBack)
     {
-        callBack.Invoke();
+        G.input.Blocked = true;
+        callBack?.Invoke();
     }
 }

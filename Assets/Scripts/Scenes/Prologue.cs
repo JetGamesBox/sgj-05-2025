@@ -10,7 +10,7 @@ public class Prologue : SceneController
         G.SwitchScene(Scenes.Level1);
     }
 
-    public override void Appear(Action callBack)
+    public override void Appear()
     {
                 
     }

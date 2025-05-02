@@ -54,9 +54,7 @@ public class InteractiveDialogController : MonoBehaviour
 
         icon.sprite = p.icon;
         border.color = p.color;
-
-        messageDelay = 3f;
-
+        messageDelay = delay;
         messageQueue = new Queue<string>(strings.Split("$$$"));
 
         StartCoroutine(Process());

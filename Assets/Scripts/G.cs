@@ -38,7 +38,7 @@ public static class G
             break;
         }
 
-        currentScene.Appear(() => { G.input.Blocked = false; });
+        currentScene.Appear();
     }
 
     public static void CameraFocus(Transform focus, float zoom = 5f)
@@ -57,7 +57,6 @@ public static class G
 
     public static void SwitchScene(Scenes scene)
     {
-        G.input.Blocked = true;
         currentScene.Disappear(() => { SceneManager.LoadScene(scene.ToString()); });
     }
 
