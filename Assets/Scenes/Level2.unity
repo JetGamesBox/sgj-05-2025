@@ -5158,6 +5158,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: SceneController
       objectReference: {fileID: 0}
+    - target: {fileID: 5618768163925275755, guid: 1f9d8ff605979c34d9c0da792abdcbf2, type: 3}
+      propertyPath: m_XDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5618768163925275755, guid: 1f9d8ff605979c34d9c0da792abdcbf2, type: 3}
+      propertyPath: m_YDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5618768163925275755, guid: 1f9d8ff605979c34d9c0da792abdcbf2, type: 3}
+      propertyPath: m_LookaheadSmoothing
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 845066057626674241, guid: 1f9d8ff605979c34d9c0da792abdcbf2, type: 3}
     m_RemovedGameObjects: []

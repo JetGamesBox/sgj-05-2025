@@ -96,9 +96,7 @@ public class Level2Controller : SceneController
         if (!testInProgress)
             return;
 
-        if (index > currentOrder)
-            currentOrder = index;
-        else
+        if (++currentOrder != index)
             ResetTest();
 
         if (index == targetOrder)
