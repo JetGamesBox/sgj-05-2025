@@ -15,7 +15,7 @@ public class YSorting : MonoBehaviour
         UpdateOrderLayer();
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         if (updateInTime)
             UpdateOrderLayer();

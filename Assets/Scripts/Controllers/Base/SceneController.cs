@@ -7,11 +7,19 @@ using UnityEngine.Audio;
 
 public class SceneController : MonoBehaviour
 {
+    protected CatDialogController catDialog;
     [HideInInspector] public AudioMixer audioMixer;
 
     protected virtual void Awake()
     {
+        catDialog = transform.Find("Interface")?.Find("CatDialogController")?.GetComponent<CatDialogController>();
         audioMixer = GetComponent<AudioMixer>();
+
+        CinemachineVirtualCamera vc = transform.Find("VirtualCamera").GetComponent<CinemachineVirtualCamera>();
+        PlayerController player = FindAnyObjectByType<PlayerController>();
+
+        if (player != null )
+            vc.Follow = player.transform;
 
         G.OnSceneAwake(this);
     }
