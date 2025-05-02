@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class CatDialogController : MonoBehaviour
 {
-    [SerializeField] private float messageDelay = 3f;
+    private float messageDelay = 3f;
     
     private Queue<string> messageQueue;
     private Text textbox;
@@ -21,9 +21,10 @@ public class CatDialogController : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    public void Show(string strings)
+    public void Show(string strings, float delay = 3f)
     {
         StopAllCoroutines();
+        messageDelay = delay;
         messageQueue = new Queue<string>(strings.Split("$$$"));
         StartCoroutine(Process());
     }

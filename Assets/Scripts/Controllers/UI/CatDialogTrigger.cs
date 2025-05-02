@@ -5,9 +5,10 @@ using UnityEngine;
 public class CatDialogTrigger : MonoBehaviour
 {
     [SerializeField] private string message;
+    [SerializeField] private float delay = 3f;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        G.ShowSceneDialog(message);
+        G.ShowSceneDialog(message, delay);
     }
 }

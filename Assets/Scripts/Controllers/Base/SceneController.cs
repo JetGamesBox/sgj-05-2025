@@ -40,8 +40,8 @@ public class SceneController : MonoBehaviour
         callBack.Invoke();
     }
 
-    public void ShowDialog(string message)
+    public void ShowDialog(string message, float delay)
     {
-        catDialog.Show(message);
+        catDialog.Show(message, delay);
     }
 }

@@ -58,8 +58,8 @@ public static class G
         currentScene.Disappear(() => { SceneManager.LoadScene(scene.ToString()); });
     }
 
-    public static void ShowSceneDialog(string message)
+    public static void ShowSceneDialog(string message, float delay)
     {
-        currentScene.ShowDialog(message);
+        currentScene.ShowDialog(message, delay);
     }
 }
