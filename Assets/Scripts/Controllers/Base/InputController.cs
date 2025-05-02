@@ -13,10 +13,10 @@ public class InputController
 
     public void Update()
     {
+        movementVector = Vector2.zero;
+
         if (Blocked)
             return;
-
-        movementVector = Vector2.zero;
 
         if (Input.GetKey(KeyCode.W))
             movementVector += Vector2.up;

@@ -6,6 +6,6 @@ public class Prologue : SceneController
 {
     void Start()
     {
-        G.SwitchScene(Scenes.GamePlayTest);
+        G.SwitchScene(Scenes.Level1);
     }
 }

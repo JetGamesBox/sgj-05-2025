@@ -12,8 +12,8 @@ public static class G
     public static void OnSceneAwake(SceneController scene)
     {
         currentScene = scene;
-
         settings.ApplyAudioSettings(currentScene.audioMixer);
+        currentScene.Appear(() => { G.input.Blocked = false; });
     }
 
     public static void Update()
@@ -23,6 +23,7 @@ public static class G
 
     public static void SwitchScene(Scenes scene)
     {
+        G.input.Blocked = true;
         currentScene.Disappear(() => { SceneManager.LoadScene(scene.ToString()); });
     }
 }

@@ -2,5 +2,9 @@ public enum Scenes
 {
     MainMenu,
     Prologue,
-    GamePlayTest
+    //GamePlayTest,
+    Level1,
+    Level2,
+    Level3,
+    EndGame
 }
