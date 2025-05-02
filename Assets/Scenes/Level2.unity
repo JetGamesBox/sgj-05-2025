@@ -554,7 +554,7 @@ GameObject:
   - component: {fileID: 122045471}
   - component: {fileID: 122045472}
   m_Layer: 0
-  m_Name: GreenTile1
+  m_Name: GreenTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -978,7 +978,7 @@ GameObject:
   - component: {fileID: 233188573}
   - component: {fileID: 233188574}
   m_Layer: 0
-  m_Name: GreenTile2
+  m_Name: GreenTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1428,18 +1428,16 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1946417410}
+  - {fileID: 801961176}
   - {fileID: 303900614}
   - {fileID: 122045469}
   - {fileID: 233188571}
   - {fileID: 951359568}
   - {fileID: 1203352189}
   - {fileID: 1731923668}
-  - {fileID: 649118299}
-  - {fileID: 792229754}
   - {fileID: 735479374}
   - {fileID: 1017506435}
-  - {fileID: 1946417410}
-  - {fileID: 801961176}
   - {fileID: 804655132}
   m_Father: {fileID: 402241031}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1601,7 +1599,7 @@ GameObject:
   - component: {fileID: 303900616}
   - component: {fileID: 303900617}
   m_Layer: 0
-  m_Name: GreenTile0
+  m_Name: GreenTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1923,7 +1921,7 @@ GameObject:
   - component: {fileID: 482010433}
   - component: {fileID: 482010432}
   m_Layer: 0
-  m_Name: RedTile (7)
+  m_Name: RedTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2212,7 +2210,7 @@ GameObject:
   - component: {fileID: 649118301}
   - component: {fileID: 649118302}
   m_Layer: 0
-  m_Name: GreenTile6
+  m_Name: RedTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2227,11 +2225,11 @@ Transform:
   m_GameObject: {fileID: 649118298}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.5, y: 0.5, z: 0}
+  m_LocalPosition: {x: -0.5, y: 0.4999988, z: 0}
   m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 251114282}
+  m_Father: {fileID: 1529840353}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &649118300
 SpriteRenderer:
@@ -2275,7 +2273,7 @@ SpriteRenderer:
   m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.13333334, g: 0.54509807, b: 0.13333334, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2357,7 +2355,7 @@ GameObject:
   - component: {fileID: 652269622}
   - component: {fileID: 652269621}
   m_Layer: 0
-  m_Name: RedTile (1)
+  m_Name: RedTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2502,7 +2500,7 @@ GameObject:
   - component: {fileID: 735479376}
   - component: {fileID: 735479377}
   m_Layer: 0
-  m_Name: GreenTile8
+  m_Name: GreenTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2588,7 +2586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneController: {fileID: 1063618087}
-  index: 10
+  index: 8
 --- !u!61 &735479377
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2647,7 +2645,7 @@ GameObject:
   - component: {fileID: 792229756}
   - component: {fileID: 792229757}
   m_Layer: 0
-  m_Name: GreenTile7
+  m_Name: RedTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2662,11 +2660,11 @@ Transform:
   m_GameObject: {fileID: 792229753}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.5, y: 1.5, z: 0}
+  m_LocalPosition: {x: -0.5, y: 1.4999986, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 251114282}
+  m_Father: {fileID: 1529840353}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &792229755
 SpriteRenderer:
@@ -2710,7 +2708,7 @@ SpriteRenderer:
   m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.13333334, g: 0.54509807, b: 0.13333334, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2792,7 +2790,7 @@ GameObject:
   - component: {fileID: 801961178}
   - component: {fileID: 801961179}
   m_Layer: 0
-  m_Name: RedTile
+  m_Name: GreenTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2937,7 +2935,7 @@ GameObject:
   - component: {fileID: 804655134}
   - component: {fileID: 804655133}
   m_Layer: 0
-  m_Name: RedTile (6)
+  m_Name: GreenTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2990,7 +2988,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.8094168, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3001,7 +2999,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.7399803, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &804655134
 MonoBehaviour:
@@ -3016,7 +3014,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneController: {fileID: 1063618087}
-  index: 12
+  index: 10
 --- !u!212 &804655135
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3502,7 +3500,7 @@ GameObject:
   - component: {fileID: 951359570}
   - component: {fileID: 951359571}
   m_Layer: 0
-  m_Name: GreenTile3
+  m_Name: GreenTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3792,7 +3790,7 @@ GameObject:
   - component: {fileID: 1017506437}
   - component: {fileID: 1017506438}
   m_Layer: 0
-  m_Name: GreenTile9
+  m_Name: GreenTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3878,7 +3876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneController: {fileID: 1063618087}
-  index: 11
+  index: 9
 --- !u!61 &1017506438
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4218,7 +4216,7 @@ GameObject:
   - component: {fileID: 1067315678}
   - component: {fileID: 1067315677}
   m_Layer: 0
-  m_Name: RedTile (5)
+  m_Name: RedTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4512,7 +4510,7 @@ GameObject:
   - component: {fileID: 1203352191}
   - component: {fileID: 1203352192}
   m_Layer: 0
-  m_Name: GreenTile4
+  m_Name: GreenTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4657,7 +4655,7 @@ GameObject:
   - component: {fileID: 1275781181}
   - component: {fileID: 1275781180}
   m_Layer: 0
-  m_Name: RedTile (4)
+  m_Name: RedTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5564,6 +5562,8 @@ Transform:
   - {fileID: 2084583221}
   - {fileID: 127408910}
   - {fileID: 992239696}
+  - {fileID: 649118299}
+  - {fileID: 792229754}
   m_Father: {fileID: 402241031}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1681962142
@@ -5985,7 +5985,7 @@ GameObject:
   - component: {fileID: 1731923670}
   - component: {fileID: 1731923671}
   m_Layer: 0
-  m_Name: GreenTile5
+  m_Name: GreenTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6130,7 +6130,7 @@ GameObject:
   - component: {fileID: 1760781043}
   - component: {fileID: 1760781042}
   m_Layer: 0
-  m_Name: GreenTile0 (1)
+  m_Name: RedTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6593,7 +6593,7 @@ GameObject:
   - component: {fileID: 1840792498}
   - component: {fileID: 1840792497}
   m_Layer: 0
-  m_Name: RedTile (3)
+  m_Name: RedTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6774,7 +6774,7 @@ GameObject:
   - component: {fileID: 1946417412}
   - component: {fileID: 1946417411}
   m_Layer: 0
-  m_Name: RedTile (2)
+  m_Name: GreenTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6919,7 +6919,7 @@ GameObject:
   - component: {fileID: 2006630720}
   - component: {fileID: 2006630719}
   m_Layer: 0
-  m_Name: RedTile (8)
+  m_Name: RedTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7225,7 +7225,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4517305977107515372, guid: a61c77aeee3997846af4f255b8e875ed, type: 3}
       propertyPath: m_Mass
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517305977107515372, guid: a61c77aeee3997846af4f255b8e875ed, type: 3}
+      propertyPath: m_LinearDrag
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 4703588483764889105, guid: a61c77aeee3997846af4f255b8e875ed, type: 3}
       propertyPath: m_Name
@@ -7446,7 +7450,7 @@ GameObject:
   - component: {fileID: 2136710116}
   - component: {fileID: 2136710115}
   m_Layer: 0
-  m_Name: GreenTile0
+  m_Name: RedTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

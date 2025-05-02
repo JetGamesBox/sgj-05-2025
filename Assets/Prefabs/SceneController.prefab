@@ -131,6 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e76c40a6b369df4b88c5208a74a8351, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactiveDialog: {fileID: 0}
   audioMixer: {fileID: 0}
 --- !u!1 &3572279217407994372
 GameObject:
@@ -316,7 +317,7 @@ GameObject:
   - component: {fileID: 6356247594158746507}
   - component: {fileID: 1056243032759759954}
   m_Layer: 0
-  m_Name: CatDialogController
+  m_Name: DialogController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -356,7 +357,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 202c2913cf4f89b46ba98c0206aa0a02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  messageDelay: 3
+  iconAlice: {fileID: 21300000, guid: 948e41f8445d4c54f81dbe995c02c15b, type: 3}
+  colorAlice: {r: 0.027450982, g: 0.10980393, b: 0.81568635, a: 1}
+  iconCat: {fileID: 21300000, guid: 9b2ada6036725ed41afbadb97e83ed84, type: 3}
+  colorCat: {r: 0.59607846, g: 0.07058824, b: 0.46274513, a: 0}
+  iconWorm: {fileID: 21300000, guid: 9b2ada6036725ed41afbadb97e83ed84, type: 3}
+  colorWorm: {r: 0.59607846, g: 0.07058824, b: 0.46274513, a: 0}
+  iconHatMaster: {fileID: 21300000, guid: 9b2ada6036725ed41afbadb97e83ed84, type: 3}
+  colorHatMaster: {r: 0.59607846, g: 0.07058824, b: 0.46274513, a: 0}
+  iconQueen: {fileID: 21300000, guid: 9b2ada6036725ed41afbadb97e83ed84, type: 3}
+  colorQueen: {r: 0.59607846, g: 0.07058824, b: 0.46274513, a: 0}
 --- !u!95 &1056243032759759954
 Animator:
   serializedVersion: 5

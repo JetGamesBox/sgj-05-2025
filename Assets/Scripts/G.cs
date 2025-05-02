@@ -61,8 +61,8 @@ public static class G
         currentScene.Disappear(() => { SceneManager.LoadScene(scene.ToString()); });
     }
 
-    public static void ShowSceneDialog(string message, float delay)
+    public static void ShowSceneDialog(DialogPersones who, string message, float delay = 3f)
     {
-        currentScene.ShowDialog(message, delay);
+        currentScene.interactiveDialog.Show(who, message, delay);
     }
 }

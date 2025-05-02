@@ -7,13 +7,13 @@ using UnityEngine.Audio;
 
 public class SceneController : MonoBehaviour
 {
-    protected CatDialogController catDialog;
+    [HideInInspector] public InteractiveDialogController interactiveDialog;
     [HideInInspector] public AudioMixer audioMixer;
     protected PlayerController player;
 
     protected virtual void Awake()
     {
-        catDialog = transform.Find("Interface")?.Find("CatDialogController")?.GetComponent<CatDialogController>();
+        interactiveDialog = transform.Find("Interface")?.Find("DialogController")?.GetComponent<InteractiveDialogController>();
         audioMixer = GetComponent<AudioMixer>();
 
         player = FindAnyObjectByType<PlayerController>();
@@ -38,10 +38,5 @@ public class SceneController : MonoBehaviour
     public virtual void Disappear(Action callBack)
     {
         callBack.Invoke();
-    }
-
-    public void ShowDialog(string message, float delay)
-    {
-        catDialog.Show(message, delay);
     }
 }

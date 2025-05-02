@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GamePlayTestController : SceneController
 {
-    [SerializeField] private CatDialogController catDialogController;
+    [SerializeField] private InteractiveDialogController DialogController;
 
     private void Start()
     {
@@ -14,6 +14,6 @@ public class GamePlayTestController : SceneController
     private IEnumerator ShowDialogTest()
     {
         yield return new WaitForSeconds(3f);
-        catDialogController?.Show("Тестовое сообщение 1$$$И еще одно сообщение!");
+        DialogController?.Show(DialogPersones.Cat, "Тестовое сообщение 1$$$И еще одно сообщение!");
     }
 }

@@ -12,7 +12,7 @@ public class Level2Controller : SceneController
     private bool testInProgress = false;
     private bool testFinished = false;
 
-    private int targetOrder = 9;
+    private int targetOrder = 10;
     private int currentOrder = -1;
 
     protected override void Awake()
@@ -56,6 +56,7 @@ public class Level2Controller : SceneController
     {
         testInProgress = true;
         movableObject.gameObject.SetActive(true);
+        G.ShowSceneDialog(DialogPersones.Cat, "Тест диалогового окна");
     }
 
     private void ResetTest()

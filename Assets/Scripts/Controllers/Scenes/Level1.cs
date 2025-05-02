@@ -8,7 +8,7 @@ public class Level1Controller : SceneController
     {
         base.Awake();
 
-        G.CameraFocus(player.transform, 3.5f);
+        G.CameraFocus(player.transform, 5f);
     }
 
     public override void OnLevelCompleteTrigger()

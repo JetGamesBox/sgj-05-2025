@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1217728357727650306}
   - component: {fileID: 3343756968423112143}
   m_Layer: 0
-  m_Name: CatDialogTrigger
+  m_Name: DialogTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -143,5 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03f3f8b06a8cb7040b7670e9b593d8b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  who: 1
   message: 
   delay: 3
+  showOnce: 1
