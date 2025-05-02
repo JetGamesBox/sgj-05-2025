@@ -20,6 +20,9 @@ public static class G
 
     public static void OnSceneAwake(SceneController scene, Transform focus = null)
     {
+        Application.targetFrameRate = 60;
+        //QualitySettings.vSyncCount = 60;
+
         currentScene = scene;
         settings.ApplyAudioSettings(currentScene.audioMixer);
 

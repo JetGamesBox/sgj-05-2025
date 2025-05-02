@@ -6,9 +6,16 @@ public class CatDialogTrigger : MonoBehaviour
 {
     [SerializeField] private string message;
     [SerializeField] private float delay = 3f;
+    [SerializeField] private bool showOnce = true;
+
+    private bool showed = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        G.ShowSceneDialog(message, delay);
+        if (!showed)
+        {
+            G.ShowSceneDialog(message, delay);
+            showed = showOnce;
+        }
     }
 }
