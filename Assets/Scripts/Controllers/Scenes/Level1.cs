@@ -5,7 +5,7 @@ using UnityEngine;
 public class Level1Controller : SceneController
 {
 
-    public void OnLevelComplete()
+    public override void OnLevelCompleteTrigger()
     {
         G.SwitchScene(Scenes.Level2);
     }

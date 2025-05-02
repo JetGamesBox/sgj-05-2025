@@ -102,4 +102,9 @@ public class Level2Controller : SceneController
         if (index == targetOrder)
             StartCoroutine(CutSceneTestEnd());
     }
+
+    public override void OnLevelCompleteTrigger()
+    {
+        G.SwitchScene(Scenes.Level3);
+    }
 }

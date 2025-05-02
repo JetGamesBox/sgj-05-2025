@@ -26,6 +26,10 @@ public class SceneController : MonoBehaviour
         G.Update();
     }
 
+    public virtual void OnLevelCompleteTrigger()
+    {
+    }
+
     public virtual void Appear(Action callBack)
     {
         callBack.Invoke();
