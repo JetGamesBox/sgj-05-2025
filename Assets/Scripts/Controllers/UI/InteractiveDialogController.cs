@@ -22,7 +22,7 @@ public class InteractiveDialogController : MonoBehaviour
     private Dictionary<DialogPersones, Persone> personesList = new Dictionary<DialogPersones, Persone>();
     private Queue<string> messageQueue;
 
-    private FMODUnity.EventReference currentSpeaker;
+    private FMODUnity.EventReference currentVoiceEvent;
 
     private void Awake()
     {
@@ -43,7 +43,7 @@ public class InteractiveDialogController : MonoBehaviour
 
         Persone p = personesList[who];
 
-        currentSpeaker = p.voice;
+        currentVoiceEvent = p.voice;
 
         icon.sprite = p.icon;
         border.color = p.color;
@@ -56,7 +56,7 @@ public class InteractiveDialogController : MonoBehaviour
     private IEnumerator Process()
     {
         textbox.text = messageQueue.Dequeue();
-        FMODUnity.RuntimeManager.PlayOneShot(currentSpeaker);
+        PlayVoice();
 
         gameObject.SetActive(true);
         animator.SetBool("Show", true);
@@ -66,12 +66,20 @@ public class InteractiveDialogController : MonoBehaviour
         {
             yield return new WaitForSeconds(messageDelay);
             textbox.text = messageQueue.Dequeue();
-            FMODUnity.RuntimeManager.PlayOneShot(currentSpeaker);
+            PlayVoice();
         }
 
         yield return new WaitForSeconds(messageDelay);
 
         animator.SetBool("Show", false);
         yield return new WaitForSeconds(1f);
+    }
+
+    private void PlayVoice()
+    {
+        if (currentVoiceEvent.IsNull)
+            return;
+
+        FMODUnity.RuntimeManager.PlayOneShot(currentVoiceEvent);
     }
 }

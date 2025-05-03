@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class Level1Controller : SceneController
 {
@@ -12,14 +13,14 @@ public class Level1Controller : SceneController
     protected override void Awake()
     {
         base.Awake();
-        G.CameraFocus(player.transform, 5f);
 
         completeTrigger.gameObject.SetActive(false);
+        player.gameObject.GetComponent<Light2D>().intensity = 2.5f;
     }
 
     private void Start()
     {
-        //StartCoroutine(CutSceneLevelBegin());
+        StartCoroutine(CutSceneLevelBegin());
     }
 
     private IEnumerator CutSceneLevelBegin()

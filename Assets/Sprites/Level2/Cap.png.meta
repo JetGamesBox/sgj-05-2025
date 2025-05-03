@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Sprites/Level1/Level1_Background.png.meta
-guid: 2a8766c2d4cd04d48bae35020154dd54
-========
-guid: 0654df9ebe8a05c4ca4f0108f5a7de34
->>>>>>>> fe5cd6d3f6007bc0fc77f591c5492406a135aa6c:Assets/Sprites/Level2/Botato.jpg.meta
+guid: 86ab75186c307e64b911ebc14a94ed64
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -52,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 150
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1

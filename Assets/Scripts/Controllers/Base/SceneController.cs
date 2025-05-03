@@ -4,6 +4,7 @@ using UnityEngine;
 using Cinemachine;
 using System;
 using UnityEngine.Audio;
+using UnityEngine.Rendering.Universal;
 
 public class SceneController : MonoBehaviour
 {

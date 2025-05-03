@@ -88,9 +88,9 @@ public class Level2Controller : SceneController
 
         G.CameraFocus(cup.transform);
 
-        G.ShowSceneDialog(DialogPersones.Cat, "Сделай ему чай по его рецепту, и он тебя пропустит.", 2f);
+        G.ShowSceneDialog(DialogPersones.Cat, "Сделай ему чай по его рецепту, и он тебя пропустит.", 4f);
 
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(3f);
 
         G.CameraFocus(tiles.transform, 10.5f);
         G.input.Blocked = false;
