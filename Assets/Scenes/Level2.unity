@@ -4210,7 +4210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactiveDialog: {fileID: 0}
   audioMixer: {fileID: 0}
-  cup: {fileID: 1286759612}
+  cup: {fileID: 1286759618}
   tiles: {fileID: 402241031}
   hatMaster: {fileID: 198765399}
   levelCompleteTrigger: {fileID: 415012153}
@@ -4793,9 +4793,9 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &1286759612 stripped
-PolygonCollider2D:
-  m_CorrespondingSourceObject: {fileID: 1507856985891050719, guid: a61c77aeee3997846af4f255b8e875ed, type: 3}
+--- !u!4 &1286759618 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5683891503132751008, guid: a61c77aeee3997846af4f255b8e875ed, type: 3}
   m_PrefabInstance: {fileID: 2075146696}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1310384130

@@ -4,10 +4,12 @@ using System.Collections.Generic;
 using UnityEditor.U2D.Aseprite;
 
 using UnityEngine;
+using UnityEngine.UIElements;
+using UnityEngine.WSA;
 
 public class Level2Controller : SceneController
 {
-    [SerializeField] private Collider2D cup;
+    [SerializeField] private Transform cup;
     [SerializeField] private Transform tiles;
     [SerializeField] private Transform hatMaster;
     [SerializeField] private Transform levelCompleteTrigger;
@@ -32,11 +34,14 @@ public class Level2Controller : SceneController
         {
             Level2Tile child = tiles.GetChild(i).GetComponent<Level2Tile>();
 
-            if (child != null && child.index >= 0)
-                tilesList.Add(child);
-        }
+            if (child == null)
+                continue;
 
-        targetOrder = tilesList.Count - 1;
+            tilesList.Add(child);
+
+            if (child.index >= 0)
+                targetOrder++;
+        }
 
         base.Awake();
     }
@@ -234,9 +239,11 @@ public class Level2Controller : SceneController
         StartCoroutine(CutSceneTestBegin());
     }
 
-    public void OnTileEnter(Collider2D collision, int index)
+    public void OnTileEnter(Collider2D collision, int index, out bool activated)
     {
-        if (collision != cup)
+        activated = false;
+
+        if (collision.transform != cup.transform)
             return;
 
         if (!testInProgress || testInPause)
@@ -249,9 +256,15 @@ public class Level2Controller : SceneController
         if (currentOrder != index)
             ResetTest(false);
         else if (currentOrder == targetOrder && index == targetOrder)
+        {
+            activated = true;
             StartCoroutine(CutSceneTestEnd());
+        }
         else
+        {
+            activated = true;
             HatMasterItemDialog();
+        }
     }
 
     public override void OnSceneEvent(string eventName)
