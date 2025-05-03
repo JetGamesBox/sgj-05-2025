@@ -36,7 +36,7 @@ public class Level2Controller : SceneController
                 tilesList.Add(child);
         }
 
-        targetOrder = tilesList.Count;
+        targetOrder = tilesList.Count - 1;
 
         base.Awake();
     }
