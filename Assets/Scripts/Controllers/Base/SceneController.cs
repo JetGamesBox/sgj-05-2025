@@ -23,6 +23,8 @@ public class SceneController : MonoBehaviour
             G.OnSceneAwake(this);
         else
             G.OnSceneAwake(this, player.transform);
+
+        player.GetComponent<Light2D>().enabled = false;
     }
 
     protected virtual void Update()

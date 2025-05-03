@@ -15,7 +15,8 @@ public class Level1Controller : SceneController
         base.Awake();
 
         completeTrigger.gameObject.SetActive(false);
-        player.gameObject.GetComponent<Light2D>().intensity = 2.5f;
+
+        player.GetComponent<Light2D>().enabled = true;
     }
 
     private void Start()
