@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 2997068271605339310}
   - component: {fileID: 3949710239459144849}
   - component: {fileID: 1085749901509927825}
-  - component: {fileID: 3217576753517934007}
   - component: {fileID: 2979396269723545568}
   - component: {fileID: 2556264862552503859}
+  - component: {fileID: 3217576753517934007}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -173,19 +173,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &3217576753517934007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3857544594459619792}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2912883343569b84cbcf25bd9e8bde9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 6
 --- !u!114 &2979396269723545568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,3 +206,16 @@ MonoBehaviour:
       Data4: 1193870725
     Path: event:/Player/Footsteps
   footstepDelay: 0.3
+--- !u!114 &3217576753517934007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3857544594459619792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2912883343569b84cbcf25bd9e8bde9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 6
