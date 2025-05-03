@@ -5042,22 +5042,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1326651517270961274, guid: 8226bea9c4e650346bd518e56ef14156, type: 3}
-      propertyPath: m_Size.x
-      value: 4.58
-      objectReference: {fileID: 0}
-    - target: {fileID: 1326651517270961274, guid: 8226bea9c4e650346bd518e56ef14156, type: 3}
-      propertyPath: m_Size.y
-      value: 6.88
-      objectReference: {fileID: 0}
-    - target: {fileID: 1326651517270961274, guid: 8226bea9c4e650346bd518e56ef14156, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1326651517270961274, guid: 8226bea9c4e650346bd518e56ef14156, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5896303663500250943, guid: 8226bea9c4e650346bd518e56ef14156, type: 3}
       propertyPath: m_Name
       value: Tile
@@ -5065,7 +5049,7 @@ PrefabInstance:
     - target: {fileID: 6096210224996929901, guid: 8226bea9c4e650346bd518e56ef14156, type: 3}
       propertyPath: itemSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 6508573f2f869d844979d41c62b50741, type: 3}
+      objectReference: {fileID: 21300000, guid: 8a424b738119f304c85b46eccaf1728a, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

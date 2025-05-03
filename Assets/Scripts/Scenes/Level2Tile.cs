@@ -27,12 +27,13 @@ public class Level2Tile : MonoBehaviour
         {
             itemAnimator = item.GetComponent<Animator>();
             item.GetComponent<SpriteRenderer>().sprite = itemSprite;
+            itemAnimator.SetFloat("SpeedAnimation", 1f + Random.Range(-0.2f, 0.2f));
         }
     }
 
     private void Start()
     {
-        sceneController = (Level2Controller)G.currentScene;
+        sceneController = (Level2Controller) G.currentScene;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
