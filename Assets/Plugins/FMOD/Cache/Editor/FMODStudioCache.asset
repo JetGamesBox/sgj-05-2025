@@ -81,6 +81,33 @@ MonoBehaviour:
   - Cards2
   - Cards3
   Exists: 1
+--- !u!114 &-5608553621256920318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sounds/NPC's/Queenvoice
+  m_EditorClassIdentifier: 
+  Path: event:/Sounds/NPC's/Queenvoice
+  Guid:
+    Data1: 639384287
+    Data2: 1309967378
+    Data3: 1472164000
+    Data4: -629989038
+  Banks:
+  - {fileID: 5940841754906907819}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1500
 --- !u!114 &-5529117569832132235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,6 +187,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-4588305610186930930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sounds/NPC's/Wormvoice
+  m_EditorClassIdentifier: 
+  Path: event:/Sounds/NPC's/Wormvoice
+  Guid:
+    Data1: -1975567684
+    Data2: 1176323852
+    Data3: 1142125748
+    Data4: 804076787
+  Banks:
+  - {fileID: 5940841754906907819}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 937
 --- !u!114 &-4565226162134659515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,12 +298,15 @@ MonoBehaviour:
   - {fileID: -5235968220968153445}
   - {fileID: 7116414395751945468}
   - {fileID: 7143747257233190449}
+  - {fileID: 3650824264965476927}
+  - {fileID: -5608553621256920318}
+  - {fileID: -4588305610186930930}
   EditorParameters: []
   MasterBanks:
   - {fileID: 5940841754906907819}
   StringsBanks:
   - {fileID: 80850964699152160}
-  cacheTime: 638819122071441225
+  cacheTime: 638819178548395125
   cacheVersion: 131846
 --- !u!114 &80850964699152160
 MonoBehaviour:
@@ -266,10 +323,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638819122071441225
+  lastModified: 638819178548395125
   FileSizes:
   - Name: 
-    Value: 1702
+    Value: 1840
   Exists: 1
 --- !u!114 &192550964512252562
 MonoBehaviour:
@@ -402,6 +459,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 11800
+--- !u!114 &3650824264965476927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sounds/NPC's/HatMastervoice
+  m_EditorClassIdentifier: 
+  Path: event:/Sounds/NPC's/HatMastervoice
+  Guid:
+    Data1: 913779644
+    Data2: 1138712764
+    Data3: 1864113798
+    Data4: 2050118669
+  Banks:
+  - {fileID: 5940841754906907819}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1437
 --- !u!114 &5344215270713891513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -445,7 +529,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 638819122071311221
+  lastModified: 638819178548365098
   FileSizes: []
   Exists: 1
 --- !u!114 &6204207189276110295

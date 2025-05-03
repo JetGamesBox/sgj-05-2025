@@ -410,31 +410,31 @@ MonoBehaviour:
     color: {r: 0.3019608, g: 0.42352945, b: 1, a: 0}
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: -1975567684
+        Data2: 1176323852
+        Data3: 1142125748
+        Data4: 804076787
+      Path: event:/Sounds/NPC's/Wormvoice
   - who: 3
     icon: {fileID: 21300000, guid: ecaf2f0982319754ca4406969d7cea3e, type: 3}
     color: {r: 0.854902, g: 0.3803922, b: 0.09411766, a: 0}
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 913779644
+        Data2: 1138712764
+        Data3: 1864113798
+        Data4: 2050118669
+      Path: event:/Sounds/NPC's/HatMastervoice
   - who: 4
     icon: {fileID: 21300000, guid: 2f0e3d0375d20b645b43132f6c06ede4, type: 3}
     color: {r: 0.87843144, g: 0.08235294, b: 0.058823533, a: 0}
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 639384287
+        Data2: 1309967378
+        Data3: 1472164000
+        Data4: -629989038
+      Path: event:/Sounds/NPC's/Queenvoice
 --- !u!1 &4654504942601667329
 GameObject:
   m_ObjectHideFlags: 0
