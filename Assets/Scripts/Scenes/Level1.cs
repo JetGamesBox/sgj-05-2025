@@ -19,7 +19,7 @@ public class Level1Controller : SceneController
 
     private void Start()
     {
-        StartCoroutine(CutSceneLevelBegin());
+        //StartCoroutine(CutSceneLevelBegin());
     }
 
     private IEnumerator CutSceneLevelBegin()
