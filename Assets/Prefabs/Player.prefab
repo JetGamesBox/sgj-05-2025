@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1085749901509927825}
   - component: {fileID: 3217576753517934007}
   - component: {fileID: 2979396269723545568}
+  - component: {fileID: 2556264862552503859}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -198,3 +199,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateInTime: 1
+--- !u!114 &2556264862552503859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3857544594459619792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21009fe10daf95c4b82d4994a89082a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkingSoundEvent:
+    Guid:
+      Data1: -741254961
+      Data2: 1139307941
+      Data3: -1154354532
+      Data4: 1193870725
+    Path: event:/Player/Footsteps
+  footstepDelay: 0.3

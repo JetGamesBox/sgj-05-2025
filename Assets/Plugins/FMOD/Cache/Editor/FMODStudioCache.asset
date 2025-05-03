@@ -24,6 +24,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-7976536736614920930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Footsteps
+  Guid:
+    Data1: -741254961
+    Data2: 1139307941
+    Data3: -1154354532
+    Data4: 1193870725
+  Banks:
+  - {fileID: 6201898811677029842}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 312
 --- !u!114 &-7857189819507908964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,10 +120,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638818734339036879
+  lastModified: 638818757070980302
   FileSizes:
   - Name: 
-    Value: 1514
+    Value: 1618
   Exists: 1
 --- !u!114 &-1825299476021233355
 MonoBehaviour:
@@ -288,12 +315,14 @@ MonoBehaviour:
   - {fileID: -1322311915720138550}
   - {fileID: -624257795692647572}
   - {fileID: -1053655746033794166}
+  - {fileID: 8504429597326378457}
+  - {fileID: -7976536736614920930}
   EditorParameters: []
   MasterBanks:
   - {fileID: 6201898811677029842}
   StringsBanks:
   - {fileID: -2511472281003777938}
-  cacheTime: 638818734339036879
+  cacheTime: 638818757070980302
   cacheVersion: 131846
 --- !u!114 &2686584168410805032
 MonoBehaviour:
@@ -361,7 +390,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 638818734339016867
+  lastModified: 638818757070950265
   FileSizes: []
   Exists: 1
 --- !u!114 &6317493314706032616
@@ -416,6 +445,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 36816
+--- !u!114 &8504429597326378457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sounds/FallInDarknet
+  m_EditorClassIdentifier: 
+  Path: event:/Sounds/FallInDarknet
+  Guid:
+    Data1: 1111582268
+    Data2: 1192285520
+    Data3: 1807055801
+    Data4: 1524727080
+  Banks:
+  - {fileID: 6201898811677029842}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 11800
 --- !u!114 &8679072296909005026
 MonoBehaviour:
   m_ObjectHideFlags: 0
