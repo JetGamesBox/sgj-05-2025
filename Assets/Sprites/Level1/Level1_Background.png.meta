@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Sprites/Level1/Level1_Background.png.meta
 guid: 2a8766c2d4cd04d48bae35020154dd54
+========
+guid: 0654df9ebe8a05c4ca4f0108f5a7de34
+>>>>>>>> fe5cd6d3f6007bc0fc77f591c5492406a135aa6c:Assets/Sprites/Level2/Botato.jpg.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
