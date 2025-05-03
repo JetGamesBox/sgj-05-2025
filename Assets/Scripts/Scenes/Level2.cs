@@ -1,5 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+
+using UnityEditor.U2D.Aseprite;
+
 using UnityEngine;
 
 public class Level2Controller : SceneController
@@ -11,9 +14,11 @@ public class Level2Controller : SceneController
 
     private Vector2 startPosition;
     private bool testInProgress = false;
+    private bool testInPause = false;
     private bool testComplete = false;
 
-    private int targetOrder = 10;
+    private List<Level2Tile> tilesList = new List<Level2Tile>();
+    private int targetOrder = -1;
     private int currentOrder = -1;
 
     protected override void Awake()
@@ -22,6 +27,16 @@ public class Level2Controller : SceneController
 
         cup.gameObject.SetActive(false);
         levelCompleteTrigger.gameObject.SetActive(false);
+
+        for (int i = 0;  i < tiles.childCount; i++)
+        {
+            Level2Tile child = tiles.GetChild(i).GetComponent<Level2Tile>();
+
+            if (child != null && child.index >= 0)
+                tilesList.Add(child);
+        }
+
+        targetOrder = tilesList.Count;
 
         base.Awake();
     }
@@ -55,6 +70,7 @@ public class Level2Controller : SceneController
     private IEnumerator CutSceneTestBegin()
     {
         testInProgress = true;
+        testInPause = false;
 
         G.input.Blocked = true;
 
@@ -86,6 +102,7 @@ public class Level2Controller : SceneController
     {
         testComplete = true;
         testInProgress = false;
+        testInPause = false;
 
         G.input.Blocked = true;
 
@@ -114,6 +131,7 @@ public class Level2Controller : SceneController
     private IEnumerator CutSceneTestReset()
     {
         G.input.Blocked = true;
+        testInPause = true;
 
         G.CameraFocus(hatMaster.transform);
 
@@ -123,12 +141,14 @@ public class Level2Controller : SceneController
         G.CameraFocus(tiles.transform, 10.5f);
         HatMasterItemDialog();
 
+        testInPause = false;
         G.input.Blocked = false;
     }
 
     private IEnumerator CutSceneTestResetAlt()
     {
         G.input.Blocked = true;
+        testInPause = true;
 
         G.CameraFocus(hatMaster.transform);
 
@@ -138,6 +158,7 @@ public class Level2Controller : SceneController
         G.CameraFocus(tiles.transform, 10.5f);
         HatMasterItemDialog();
 
+        testInPause = false;
         G.input.Blocked = false;
     }
 
@@ -169,7 +190,7 @@ public class Level2Controller : SceneController
             text = "А теперь воблештуж! Толкай туда!";
             break;
             case 7:
-            text = "Добавь эшпендреконта!";
+            text = "Пумпиний! Да, пумпиний, двигай туда!";
             break;
             case 8:
             text = "На очереди дырджемак!";
@@ -188,7 +209,7 @@ public class Level2Controller : SceneController
 
     private void ResetTest(bool alt)
     {
-        if (!testInProgress || testComplete)
+        if (!testInProgress || testComplete || testInPause)
             return;
 
         StopAllCoroutines();
@@ -196,10 +217,13 @@ public class Level2Controller : SceneController
         currentOrder = -1;
         cup.transform.position = startPosition;
 
+        foreach (Level2Tile tile in tilesList)
+            tile.Reset();
+
         if (alt)
-            StartCoroutine(CutSceneTestReset());
-        else
             StartCoroutine(CutSceneTestResetAlt());
+        else
+            StartCoroutine(CutSceneTestReset());
     }
 
     public void OnTestTile()
@@ -215,14 +239,16 @@ public class Level2Controller : SceneController
         if (collision != cup)
             return;
 
-        if (!testInProgress)
+        if (!testInProgress || testInPause)
             return;
 
-        if (currentOrder == -1 && index == targetOrder)
+        currentOrder++;
+
+        if (currentOrder != targetOrder && index == targetOrder)
             ResetTest(true);
-        if (++currentOrder != index)
+        if (currentOrder != index)
             ResetTest(false);
-        else if (index == targetOrder)
+        else if (currentOrder == targetOrder && index == targetOrder)
             StartCoroutine(CutSceneTestEnd());
         else
             HatMasterItemDialog();
