@@ -10,25 +10,7 @@ using UnityEngine.UI;
 
 public class InteractiveDialogController : MonoBehaviour
 {
-    [System.Serializable]
-    public class CharacterVoice
-    {
-        public DialogPersones character;
-        public FMODUnity.EventReference voiceEvent;
-    }
-
-    [SerializeField] private Sprite iconAlice;
-    [SerializeField] private Color colorAlice;
-    [SerializeField] private Sprite iconCat;
-    [SerializeField] private Color colorCat;
-    [SerializeField] private Sprite iconWorm;
-    [SerializeField] private Color colorWorm;
-    [SerializeField] private Sprite iconHatMaster;
-    [SerializeField] private Color colorHatMaster;
-    [SerializeField] private Sprite iconQueen;
-    [SerializeField] private Color colorQueen;
-
-    [SerializeField] private List<CharacterVoice> characterVoices = new List<CharacterVoice>();
+    [SerializeField] private List<Persone> persones = new List<Persone>();
 
     private Image icon;
     private Image border;
@@ -36,24 +18,16 @@ public class InteractiveDialogController : MonoBehaviour
     private Animator animator;
 
     private float messageDelay = 3f;
-    private Dictionary<DialogPersones, Persone> persones = new Dictionary<DialogPersones, Persone>();
+
+    private Dictionary<DialogPersones, Persone> personesList = new Dictionary<DialogPersones, Persone>();
     private Queue<string> messageQueue;
 
-    private Dictionary<DialogPersones, FMODUnity.EventReference> voiceMap = new Dictionary<DialogPersones, FMODUnity.EventReference>();
-    private DialogPersones currentSpeaker;
+    private FMODUnity.EventReference currentSpeaker;
 
     private void Awake()
     {
-        persones.Add(DialogPersones.Alice, new Persone(iconAlice, colorAlice));
-        persones.Add(DialogPersones.Cat, new Persone(iconCat, colorCat));
-        persones.Add(DialogPersones.Worm, new Persone(iconWorm, colorWorm));
-        persones.Add(DialogPersones.HatMaster, new Persone(iconHatMaster, colorHatMaster));
-        persones.Add(DialogPersones.Queen, new Persone(iconQueen, colorQueen));
-
-        foreach (var voice in characterVoices)
-        {
-            voiceMap.Add(voice.character, voice.voiceEvent);
-        }
+        foreach (Persone pers in persones)
+            personesList.Add(pers.who, pers);
 
         icon = transform.Find("Icon")?.GetComponent<Image>();
         border = transform.Find("Border")?.GetComponent<Image>();
@@ -66,9 +40,10 @@ public class InteractiveDialogController : MonoBehaviour
     public void Show(DialogPersones who, string strings, float delay = 3f)
     {
         StopAllCoroutines();
-        currentSpeaker = who;
 
-        Persone p = persones[who];
+        Persone p = personesList[who];
+
+        currentSpeaker = p.voice;
 
         icon.sprite = p.icon;
         border.color = p.color;
@@ -81,7 +56,7 @@ public class InteractiveDialogController : MonoBehaviour
     private IEnumerator Process()
     {
         textbox.text = messageQueue.Dequeue();
-        PlayVoiceSound(currentSpeaker);
+        FMODUnity.RuntimeManager.PlayOneShot(currentSpeaker);
 
         gameObject.SetActive(true);
         animator.SetBool("Show", true);
@@ -91,7 +66,7 @@ public class InteractiveDialogController : MonoBehaviour
         {
             yield return new WaitForSeconds(messageDelay);
             textbox.text = messageQueue.Dequeue();
-            PlayVoiceSound(currentSpeaker);
+            FMODUnity.RuntimeManager.PlayOneShot(currentSpeaker);
         }
 
         yield return new WaitForSeconds(messageDelay);
@@ -99,13 +74,4 @@ public class InteractiveDialogController : MonoBehaviour
         animator.SetBool("Show", false);
         yield return new WaitForSeconds(1f);
     }
-
-    private void PlayVoiceSound(DialogPersones character)
-    {
-        if (voiceMap.TryGetValue(character, out var voiceEvent))
-        {
-            FMODUnity.RuntimeManager.PlayOneShot(voiceEvent);
-        }
-    }
-
 }
