@@ -123,12 +123,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: alice_animation_0
+      name: alice_run_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 235
+        width: 224
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -137,19 +137,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff6d35360258ffc468bbf764be8f58e6
-      internalID: -44360170
+      spriteID: 0366289f634bb244bab643841f27ddcd
+      internalID: 1334145680
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alice_animation_1
+      name: alice_run_1
       rect:
         serializedVersion: 2
-        x: 235
+        x: 224
         y: 0
-        width: 235
+        width: 224
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -158,19 +158,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae05f8e8c5b8c1e4d82dd9af85ee764d
-      internalID: -199699977
+      spriteID: 2255c3fbfbe7f864fa16d4d583d503ee
+      internalID: 1205860526
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alice_animation_2
+      name: alice_run_2
       rect:
         serializedVersion: 2
-        x: 470
+        x: 448
         y: 0
-        width: 235
+        width: 224
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -179,8 +179,218 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 440bbccaf1416f94ba6a3a7edf77decf
-      internalID: -891779447
+      spriteID: c28ad865c8e119c47a2a4a1cc2de5cbe
+      internalID: -664382521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alice_run_3
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 224
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46a0d4c26e0229b4d8752b6833e0b3ba
+      internalID: -143441496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alice_run_4
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 224
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d7d87f7c2779114e8b8400a0bd57043
+      internalID: 856234223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alice_run_5
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 224
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf5711f3eb5c904e9e51c9924a9a165
+      internalID: 225909332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alice_run_6
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 0
+        width: 224
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d552a48e29fa9c94c9f7829762639394
+      internalID: 881800113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alice_run_7
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 0
+        width: 224
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 852ee38b5f20a824489eab24a71575be
+      internalID: 1831013811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alice_run_8
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 0
+        width: 224
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebc4ce1367e1d6e4a8de236ec5292e77
+      internalID: -334848754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alice_run_9
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 0
+        width: 224
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37ecb79e4353e540bf786a09ef9afb9
+      internalID: 813454012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alice_run_10
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 0
+        width: 224
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e1134db4d225534fafa02e8024a0602
+      internalID: -2000975801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alice_run_11
+      rect:
+        serializedVersion: 2
+        x: 2464
+        y: 0
+        width: 224
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c453ac6d76b0ce438d7a2f8625527ca
+      internalID: -540237915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alice_run_12
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 0
+        width: 224
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e15abdef72d5e1c43b6b7ec6ef2a3729
+      internalID: -717578888
       vertices: []
       indices: 
       edges: []
@@ -196,9 +406,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      alice_animation_0: -44360170
-      alice_animation_1: -199699977
-      alice_animation_2: -891779447
+      alice_run_0: 1334145680
+      alice_run_1: 1205860526
+      alice_run_10: -2000975801
+      alice_run_11: -540237915
+      alice_run_12: -717578888
+      alice_run_2: -664382521
+      alice_run_3: -143441496
+      alice_run_4: 856234223
+      alice_run_5: 225909332
+      alice_run_6: 881800113
+      alice_run_7: 1831013811
+      alice_run_8: -334848754
+      alice_run_9: 813454012
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

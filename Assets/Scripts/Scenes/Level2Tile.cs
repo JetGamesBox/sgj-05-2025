@@ -6,6 +6,7 @@ public class Level2Tile : MonoBehaviour
 {
     [SerializeField] private Sprite itemSprite;
     [SerializeField] public int index = -1;
+    [SerializeField] private FMODUnity.EventReference currentVoiceEvent;
 
     private Level2Controller sceneController;
 
@@ -14,7 +15,7 @@ public class Level2Tile : MonoBehaviour
 
     private Animator itemAnimator;
 
-    private bool activated = false;
+    private bool @checked = false;
 
     private void Awake()
     {
@@ -38,22 +39,23 @@ public class Level2Tile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (activated)
+        if (@checked)
             return;
 
-        sceneController.OnTileEnter(collision, index, out activated);
+        sceneController.OnTileEnter(collision, index, out @checked);
 
-        if (activated)
+        if (@checked)
         {
+
             tileSpriteRenderer.color = tileStartColor * 0.7f;
-            itemAnimator.SetBool("Activated", activated);
+            itemAnimator.SetBool("Activated", @checked);
         }
     }
 
-    public void Reset()
+    public void ResetChecked(bool value = false)
     {
-        activated = false;
-        itemAnimator.SetBool("Activated", activated);
+        @checked = value;
+        itemAnimator.SetBool("Activated", @checked);
         tileSpriteRenderer.color = tileStartColor;
     }
 }

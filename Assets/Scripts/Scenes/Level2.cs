@@ -8,6 +8,7 @@ public class Level2Controller : SceneController
     [SerializeField] private Transform tiles;
     [SerializeField] private Transform hatMaster;
     [SerializeField] private Transform levelCompleteTrigger;
+    [SerializeField] private Transform wallBehind;
 
     private Vector2 startPosition;
     private bool testInProgress = false;
@@ -32,11 +33,15 @@ public class Level2Controller : SceneController
             if (child == null)
                 continue;
 
+            child.ResetChecked(true);
+
             tilesList.Add(child);
 
             if (child.index >= 0)
                 targetOrder++;
         }
+
+        wallBehind.gameObject.SetActive(false);
 
         base.Awake();
     }
@@ -74,6 +79,8 @@ public class Level2Controller : SceneController
 
         G.input.Blocked = true;
 
+        wallBehind.gameObject.SetActive(true);
+
         G.CameraFocus(hatMaster.transform);
 
         G.ShowSceneDialog(DialogPersones.HatMaster, "А ты кто еще такая?$$$Впрочем неважно, сделайка мне чаю!", 2f);
@@ -84,13 +91,19 @@ public class Level2Controller : SceneController
 
         yield return new WaitForSeconds(2f);
 
-        cup.gameObject.SetActive(true);
+        foreach (Level2Tile tile in tilesList)
+            tile.ResetChecked(false);
 
-        G.CameraFocus(cup.transform);
+        G.CameraFocus(tiles.transform, 10.5f);
 
         G.ShowSceneDialog(DialogPersones.Cat, "Сделай ему чай по его рецепту, и он тебя пропустит.", 4f);
 
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1.5f);
+
+        cup.gameObject.SetActive(true);
+        G.CameraFocus(cup.transform);
+
+        yield return new WaitForSeconds(1.5f);
 
         G.CameraFocus(tiles.transform, 10.5f);
         G.input.Blocked = false;
@@ -110,6 +123,11 @@ public class Level2Controller : SceneController
         G.ShowSceneDialog(DialogPersones.HatMaster, "Ура, чай готов! Хочешь попробовать?$$$Нет? Ну, ладно!", 2f);
 
         yield return new WaitForSeconds(5f);
+
+        foreach (Level2Tile tile in tilesList)
+            tile.ResetChecked(true);
+
+        G.CameraFocus(player.transform);
 
         G.ShowSceneDialog(DialogPersones.Cat, "Алиса, ты справилась!", 2f);
 
@@ -219,7 +237,7 @@ public class Level2Controller : SceneController
         cup.transform.position = startPosition;
 
         foreach (Level2Tile tile in tilesList)
-            tile.Reset();
+            tile.ResetChecked();
 
         if (alt)
             StartCoroutine(CutSceneTestResetAlt());
