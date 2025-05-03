@@ -266,3 +266,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemSprite: {fileID: 0}
   index: -1
+  itemPickSound:
+    Guid:
+      Data1: 240087923
+      Data2: 1291822132
+      Data3: 1640923778
+      Data4: -1280148621
+    Path: event:/Sounds/TileSound
