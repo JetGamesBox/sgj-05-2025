@@ -4,17 +4,35 @@ using UnityEngine;
 
 public class Level2Tile : MonoBehaviour
 {
-    [SerializeField] Level2Controller sceneController;
+    [SerializeField] private Sprite itemSprite;
     [SerializeField] public int index = -1;
 
-    private SpriteRenderer spriteRenderer;
-    private Color startColor;
+    private Level2Controller sceneController;
+
+    private SpriteRenderer tileSpriteRenderer;
+    private Color tileStartColor;
+
+    private Animator itemAnimator;
+
     private bool activated = false;
 
     private void Awake()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        startColor = spriteRenderer.color;
+        tileSpriteRenderer = GetComponent<SpriteRenderer>();
+        tileStartColor = tileSpriteRenderer.color;
+
+        Transform item = transform.Find("Item");
+
+        if (item != null )
+        {
+            itemAnimator = item.GetComponent<Animator>();
+            item.GetComponent<SpriteRenderer>().sprite = itemSprite;
+        }
+    }
+
+    private void Start()
+    {
+        sceneController = (Level2Controller)G.currentScene;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -25,12 +43,16 @@ public class Level2Tile : MonoBehaviour
         sceneController.OnTileEnter(collision, index, out activated);
 
         if (activated)
-            spriteRenderer.color = startColor * 0.7f;
+        {
+            tileSpriteRenderer.color = tileStartColor * 0.7f;
+            itemAnimator.SetBool("Activated", activated);
+        }
     }
 
     public void Reset()
     {
         activated = false;
-        spriteRenderer.color = startColor;
+        itemAnimator.SetBool("Activated", activated);
+        tileSpriteRenderer.color = tileStartColor;
     }
 }
