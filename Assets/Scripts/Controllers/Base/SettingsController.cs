@@ -5,6 +5,13 @@ using UnityEngine.Audio;
 
 public class SettingsController
 {
+    public SettingsController ()
+    {
+        Application.targetFrameRate = 60;
+        //QualitySettings.vSyncCount = 60;
+    }
+
+
     public void ApplyAudioSettings(AudioMixer audioMixer)
     {
         float masterVolume = PlayerPrefs.GetFloat("MasterVolume");

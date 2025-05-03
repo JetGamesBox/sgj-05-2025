@@ -1,12 +1,6 @@
-
-using System;
-using System.Collections;
 using Cinemachine;
-
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-using static UnityEngine.RuleTile.TilingRuleOutput;
 
 using Transform = UnityEngine.Transform;
 
@@ -20,14 +14,11 @@ public static class G
 
     public static void OnSceneAwake(SceneController scene, Transform focus = null)
     {
-        Application.targetFrameRate = 60;
-        //QualitySettings.vSyncCount = 60;
-
         currentScene = scene;
         settings.ApplyAudioSettings(currentScene.audioMixer);
 
         Transform vc = scene.transform.Find("VirtualCamera");
-        currentCamera = vc.GetComponent<CinemachineVirtualCamera>();
+        currentCamera = vc?.GetComponent<CinemachineVirtualCamera>();
 
         CameraFocus(focus);
 
