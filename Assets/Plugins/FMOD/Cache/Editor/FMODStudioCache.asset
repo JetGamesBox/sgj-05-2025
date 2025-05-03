@@ -108,6 +108,33 @@ MonoBehaviour:
   - Cards2
   - Cards3
   Exists: 1
+--- !u!114 &-5648074547370132563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Catvoice
+  m_EditorClassIdentifier: 
+  Path: event:/Catvoice
+  Guid:
+    Data1: 473573475
+    Data2: 1225857692
+    Data3: 724965539
+    Data4: 1205826225
+  Banks:
+  - {fileID: 5940841754906907819}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1625
 --- !u!114 &-5529117569832132235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,13 +297,13 @@ MonoBehaviour:
   - {fileID: 6204207189276110295}
   - {fileID: -5235968220968153445}
   - {fileID: 7116414395751945468}
-  - {fileID: -7986221129671150244}
+  - {fileID: -5648074547370132563}
   EditorParameters: []
   MasterBanks:
   - {fileID: 5940841754906907819}
   StringsBanks:
   - {fileID: 80850964699152160}
-  cacheTime: 638818976987587044
+  cacheTime: 638819087635572075
   cacheVersion: 131846
 --- !u!114 &80850964699152160
 MonoBehaviour:
@@ -293,7 +320,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638818976987587044
+  lastModified: 638819087635572075
   FileSizes:
   - Name: 
     Value: 1696
@@ -472,7 +499,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 638818976987557016
+  lastModified: 638819087635451946
   FileSizes: []
   Exists: 1
 --- !u!114 &6204207189276110295
