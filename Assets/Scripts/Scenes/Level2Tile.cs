@@ -6,7 +6,7 @@ public class Level2Tile : MonoBehaviour
 {
     [SerializeField] private Sprite itemSprite;
     [SerializeField] public int index = -1;
-    [SerializeField] private FMODUnity.EventReference currentVoiceEvent;
+    [SerializeField] private FMODUnity.EventReference itemPickSound;
 
     private Level2Controller sceneController;
 
@@ -32,6 +32,14 @@ public class Level2Tile : MonoBehaviour
         }
     }
 
+    private void PlaySound()
+    {
+        if (itemPickSound.IsNull)
+            return;
+
+        FMODUnity.RuntimeManager.PlayOneShot(itemPickSound);
+    }
+
     private void Start()
     {
         sceneController = (Level2Controller) G.currentScene;
@@ -46,9 +54,9 @@ public class Level2Tile : MonoBehaviour
 
         if (@checked)
         {
-
             tileSpriteRenderer.color = tileStartColor * 0.7f;
             itemAnimator.SetBool("Activated", @checked);
+            PlaySound();
         }
     }
 
