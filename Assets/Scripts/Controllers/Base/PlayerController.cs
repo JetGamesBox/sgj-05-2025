@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D rb;
 
+    private Vector2 forcedVelocity  = Vector2.zero;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -32,8 +34,19 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        Vector2 newVelocity = G.input.movementVector * speed;
+        if (Vector2.Equals(forcedVelocity, Vector2.zero))
+            VelocityUpdate(G.input.movementVector * speed);
+        else
+            VelocityUpdate(forcedVelocity * speed);       
+    }
 
+    public void ForceVelocity(Vector2 velocity)
+    {
+        forcedVelocity = velocity;
+    }
+
+    private void VelocityUpdate(Vector2 newVelocity)
+    {
         if (!Vector2.Equals(newVelocity, rb.velocity))
         {
             bool running = newVelocity.x != 0f || newVelocity.y != 0f;
@@ -52,7 +65,5 @@ public class PlayerController : MonoBehaviour
 
         if (collision && rb.velocity.x == 0f && rb.velocity.y == 0f)
             animator.SetBool("Running", false);
-
-
     }
 }
