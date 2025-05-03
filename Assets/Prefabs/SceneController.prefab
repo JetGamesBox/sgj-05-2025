@@ -363,8 +363,8 @@ MonoBehaviour:
   colorCat: {r: 0.59607846, g: 0.07058824, b: 0.46274513, a: 0}
   iconWorm: {fileID: 21300000, guid: f92c3e86799fa524cae8b80709d8d7a3, type: 3}
   colorWorm: {r: 0.3019608, g: 0.42352945, b: 1, a: 0}
-  iconHatMaster: {fileID: 21300000, guid: 9b2ada6036725ed41afbadb97e83ed84, type: 3}
-  colorHatMaster: {r: 0.59607846, g: 0.07058824, b: 0.46274513, a: 0}
+  iconHatMaster: {fileID: 21300000, guid: ecaf2f0982319754ca4406969d7cea3e, type: 3}
+  colorHatMaster: {r: 0.27058825, g: 0.33333334, b: 0.227451, a: 0}
   iconQueen: {fileID: 21300000, guid: 9b2ada6036725ed41afbadb97e83ed84, type: 3}
   colorQueen: {r: 0.59607846, g: 0.07058824, b: 0.46274513, a: 0}
 --- !u!95 &1056243032759759954

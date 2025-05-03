@@ -17,8 +17,11 @@ public class SceneController : MonoBehaviour
         audioMixer = GetComponent<AudioMixer>();
 
         player = FindAnyObjectByType<PlayerController>();
-        
-        G.OnSceneAwake(this, player.transform);
+
+        if (player == null)
+            G.OnSceneAwake(this);
+        else
+            G.OnSceneAwake(this, player.transform);
     }
 
     protected virtual void Update()

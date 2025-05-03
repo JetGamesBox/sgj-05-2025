@@ -743,8 +743,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1082516728}
-  - component: {fileID: 1082516729}
   - component: {fileID: 1082516730}
+  - component: {fileID: 1082516729}
   m_Layer: 0
   m_Name: SceneController
   m_TagString: Untagged
@@ -779,6 +779,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b2b56f6e147ab941b244eb0d322645d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactiveDialog: {fileID: 0}
+  audioMixer: {fileID: 0}
 --- !u!82 &1082516730
 AudioSource:
   m_ObjectHideFlags: 0

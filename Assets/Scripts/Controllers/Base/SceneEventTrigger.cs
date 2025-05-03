@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LevelEndTrigger : MonoBehaviour
+public class SceneEventTrigger : MonoBehaviour
 {
     private SceneController sceneController;
     [SerializeField] private string eventName = "LevelComplete";
@@ -10,7 +10,7 @@ public class LevelEndTrigger : MonoBehaviour
 
     private bool triggered = false;
 
-    private void Awake()
+    private void Start()
     {
         sceneController = G.currentScene;
     }

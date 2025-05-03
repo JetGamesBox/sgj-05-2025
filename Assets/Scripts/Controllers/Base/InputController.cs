@@ -5,6 +5,7 @@ using UnityEngine;
 public class InputController
 {
     public Vector2 movementVector { get; private set; }
+
     public bool Blocked { get; set; }
     public InputController()
     {

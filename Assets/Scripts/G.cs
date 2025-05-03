@@ -43,7 +43,7 @@ public static class G
 
     public static void CameraFocus(Transform focus, float zoom = 5f)
     {
-        if (currentCamera != null)
+        if (currentCamera != null && focus != null)
         {
             currentCamera.Follow = focus;
             currentCamera.m_Lens.OrthographicSize = zoom;
@@ -57,7 +57,7 @@ public static class G
 
     public static void SwitchScene(Scenes scene)
     {
-        currentScene.Disappear(() => { SceneManager.LoadScene(scene.ToString()); });
+        currentScene?.Disappear(() => { SceneManager.LoadScene(scene.ToString()); });
     }
 
     public static void ShowSceneDialog(DialogPersones who, string message, float delay = 3f)

@@ -3680,7 +3680,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1428383521}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: defc1741b1c58274ea420b91ed1f9d6d, type: 3}
+  m_Script: {fileID: 11500000, guid: d52c539a43de54d4288d727e6cbcdac2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   eventName: WormDialog
@@ -4170,7 +4170,7 @@ Transform:
   m_GameObject: {fileID: 1550882121}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.92, y: -45.43, z: -0.43135476}
+  m_LocalPosition: {x: -1.92, y: -40.22, z: -0.43135476}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

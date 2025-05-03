@@ -7,16 +7,13 @@ public class Prologue : SceneController
 {
     void Start()
     {
+        StartCoroutine(NextScene());
+    }
+
+    private IEnumerator NextScene()
+    {
+        yield return new WaitForSeconds(5f);
+
         G.SwitchScene(Scenes.Level1);
-    }
-
-    public override void Appear()
-    {
-                
-    }
-
-    private IEnumerator AppearProcess(Action callBack)
-    {
-        return null;
     }
 }
