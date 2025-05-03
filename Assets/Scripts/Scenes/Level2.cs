@@ -43,7 +43,7 @@ public class Level2Controller : SceneController
 
     private void Start()
     {
-        //StartCoroutine(CutSceneBegin());
+        StartCoroutine(CutSceneBegin());
     }
 
     private IEnumerator CutSceneBegin()
