@@ -3,6 +3,7 @@ using System.Collections;
 
 using Cinemachine;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
 
 using Transform = UnityEngine.Transform;

@@ -232,7 +232,7 @@ GameObject:
   m_Component:
   - component: {fileID: 179951721}
   m_Layer: 0
-  m_Name: TenSpides
+  m_Name: TenClubs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -247,7 +247,7 @@ Transform:
   m_GameObject: {fileID: 179951720}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5, y: -3.5, z: 0}
+  m_LocalPosition: {x: 1.5, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -278,7 +278,7 @@ Transform:
   m_GameObject: {fileID: 231783118}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: -3.5, z: 0}
+  m_LocalPosition: {x: 3, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -309,7 +309,7 @@ Transform:
   m_GameObject: {fileID: 259241898}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.5, z: 0}
+  m_LocalPosition: {x: 0, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -340,7 +340,7 @@ Transform:
   m_GameObject: {fileID: 296695785}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: 3.5, z: 0}
+  m_LocalPosition: {x: 3, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -371,7 +371,7 @@ Transform:
   m_GameObject: {fileID: 306996071}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: -3.5, z: 0}
+  m_LocalPosition: {x: -3, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -545,7 +545,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: ce07b8300eb7fc5438eff526f01f857f, type: 3}
+  m_Sprite: {fileID: -2044353790, guid: 90c9450013c264346bcd306e66974941, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -626,7 +626,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.8225, y: 2.56}
+    oldSize: {x: 2.5272727, y: 3.6449218}
     newSize: {x: 1.8225, y: 2.56}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -790,7 +790,7 @@ Transform:
   m_GameObject: {fileID: 563624357}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.5, z: 0}
+  m_LocalPosition: {x: 0, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -821,7 +821,7 @@ Transform:
   m_GameObject: {fileID: 583016987}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: -3.5, z: 0}
+  m_LocalPosition: {x: 3, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -837,7 +837,7 @@ GameObject:
   m_Component:
   - component: {fileID: 834621362}
   m_Layer: 0
-  m_Name: NineClubs
+  m_Name: NineSpides
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -852,7 +852,7 @@ Transform:
   m_GameObject: {fileID: 834621361}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: 3.5, z: 0}
+  m_LocalPosition: {x: -3, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1171,7 +1171,7 @@ Transform:
   m_GameObject: {fileID: 982255640}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.5, z: 0}
+  m_LocalPosition: {x: 0, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1239,7 +1239,7 @@ Transform:
   m_GameObject: {fileID: 1065779846}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5, y: 3.5, z: 0}
+  m_LocalPosition: {x: 1.5, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1652,6 +1652,22 @@ MonoBehaviour:
   cardPrefab: {fileID: 710557622188342475, guid: b56e288fe47f842419df450e2b177e6c, type: 3}
   cardSprites:
   - {fileID: 21300000, guid: a49b05009b4cb3244892fdd3ac2b3f04, type: 3}
+  - {fileID: 538271811, guid: 90c9450013c264346bcd306e66974941, type: 3}
+  - {fileID: 1266031428, guid: 90c9450013c264346bcd306e66974941, type: 3}
+  - {fileID: 1342742317, guid: 90c9450013c264346bcd306e66974941, type: 3}
+  - {fileID: -464293412, guid: 90c9450013c264346bcd306e66974941, type: 3}
+  - {fileID: 80833360, guid: 90c9450013c264346bcd306e66974941, type: 3}
+  - {fileID: 134719097, guid: 90c9450013c264346bcd306e66974941, type: 3}
+  - {fileID: -1233857299, guid: 90c9450013c264346bcd306e66974941, type: 3}
+  - {fileID: -151790915, guid: 90c9450013c264346bcd306e66974941, type: 3}
+  - {fileID: 1915739511, guid: 90c9450013c264346bcd306e66974941, type: 3}
+  - {fileID: -1009574289, guid: 90c9450013c264346bcd306e66974941, type: 3}
+  - {fileID: 887287669, guid: 90c9450013c264346bcd306e66974941, type: 3}
+  - {fileID: -847147226, guid: 90c9450013c264346bcd306e66974941, type: 3}
+  - {fileID: -1488885994, guid: 90c9450013c264346bcd306e66974941, type: 3}
+  - {fileID: 1686925475, guid: 90c9450013c264346bcd306e66974941, type: 3}
+  - {fileID: -1688319194, guid: 90c9450013c264346bcd306e66974941, type: 3}
+  - {fileID: 1798521687, guid: 90c9450013c264346bcd306e66974941, type: 3}
 --- !u!1 &1259353216
 GameObject:
   m_ObjectHideFlags: 0
@@ -1761,7 +1777,7 @@ Transform:
   m_GameObject: {fileID: 1391747295}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: 3.5, z: 0}
+  m_LocalPosition: {x: -3, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2075,7 +2091,7 @@ Transform:
   m_GameObject: {fileID: 1517987461}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: -3.5, z: 0}
+  m_LocalPosition: {x: -3, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2106,7 +2122,7 @@ Transform:
   m_GameObject: {fileID: 1533048050}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5, y: -3.5, z: 0}
+  m_LocalPosition: {x: -1.5, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2597,7 +2613,7 @@ Transform:
   m_GameObject: {fileID: 1776480304}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5, y: 3.5, z: 0}
+  m_LocalPosition: {x: -1.5, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2831,7 +2847,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1896514121}
   m_Layer: 0
-  m_Name: AceDiamonds
+  m_Name: AceClubs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2846,7 +2862,7 @@ Transform:
   m_GameObject: {fileID: 1896514120}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.5, z: 0}
+  m_LocalPosition: {x: 0, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2877,7 +2893,7 @@ Transform:
   m_GameObject: {fileID: 1925600894}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: 3.5, z: 0}
+  m_LocalPosition: {x: 3, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

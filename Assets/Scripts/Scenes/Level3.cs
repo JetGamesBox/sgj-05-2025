@@ -185,12 +185,64 @@ public class Level3Controller: SceneController
 
     private Sprite CardSpriteByName(string name)
     {
+        int index = 0;
+
         switch (name)
         {
-
-
-            default: return cardSprites[0];
+            case "ThreeHearts":
+            index = 1;
+            break;
+            case "FiveDiamonds":
+            index = 2;
+            break;
+            case "SixClubs":
+            index = 3;
+            break;
+            case "SevenSpides":
+            index = 4;
+            break;
+            case "TenClubs":
+            index = 5;
+            break;
+            case "EightHears":
+            index = 6;
+            break;
+            case "NineSpides":
+            index = 7;
+            break;
+            case "NineClubs":
+            index = 8;
+            break;
+            case "AceSpides":
+            index = 9;
+            break;
+            case "JackClubs":
+            index = 10;
+            break;
+            case "QueenClubs":
+            index = 11;
+            break;
+            case "QueenHearts":
+            index = 12;
+            break;
+            case "AceDiamonds":
+            index = 13;
+            break;
+            case "AceHearts":
+            index = 14;
+            break;
+            case "AceClubs":
+            index = 15;
+            break;
+            case "Sixteen":
+            index = 16;
+            break;
+            default:
+            index = 0;
+            break;
         }
+
+        return cardSprites[index];
     }
 
     private void PrepeareRound(string roundName)

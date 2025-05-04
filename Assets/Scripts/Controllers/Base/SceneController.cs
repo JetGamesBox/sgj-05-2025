@@ -19,9 +19,10 @@ public class SceneController : MonoBehaviour
         if (player == null)
             G.OnSceneAwake(this);
         else
+        {
             G.OnSceneAwake(this, player.transform);
-
-        player.GetComponent<Light2D>().enabled = false;
+            player.GetComponent<Light2D>().enabled = false;
+        }
     }
 
     protected virtual void Update()

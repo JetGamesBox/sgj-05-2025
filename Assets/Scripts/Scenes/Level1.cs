@@ -50,13 +50,15 @@ public class Level1Controller : SceneController
 
         G.CameraFocus(worm);
 
-        yield return G.ShowSceneDialogAndWait(DialogPersones.Worm, "Ты... кто... такая?", 2f);
-        yield return G.ShowSceneDialogAndWait(DialogPersones.Worm, "Глитч? Уходи!", 2f);
+        yield return G.ShowSceneDialogAndWait(DialogPersones.Worm, "Ты... кто... такая?");
+        yield return G.ShowSceneDialogAndWait(DialogPersones.Alice, "Не очень-то вежливое начало беседы!");
+
+        yield return G.ShowSceneDialogAndWait(DialogPersones.Worm, "Ты глитч? Ошибка... Уходи!", 2f);
 
         completeTrigger.gameObject.SetActive(true);
         G.CameraFocus(completeTrigger);
 
-        yield return G.ShowSceneDialogAndWait(DialogPersones.Cat, "Быстрее, прыгай в архиватор!");
+        yield return G.ShowSceneDialogAndWait(DialogPersones.Cat, "Алиса, не отвлекайся! Скорее прыгай в первый архиватор!");
 
         G.CameraFocus(player.transform);
 
