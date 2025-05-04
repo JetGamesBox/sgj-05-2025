@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class Level2Controller : SceneController
 {
@@ -44,6 +45,8 @@ public class Level2Controller : SceneController
         wallBehind.gameObject.SetActive(false);
 
         base.Awake();
+
+        player.GetComponent<Light2D>().enabled = true;
     }
 
     private void Start()
@@ -58,7 +61,7 @@ public class Level2Controller : SceneController
 
         yield return G.ShowSceneDialogAndWait(DialogPersones.Cat, "Хорошо, ты стала легче! Теперь второй архиватор.");
         yield return G.ShowSceneDialogAndWait(DialogPersones.Cat, "Его охраняет любитель чая. Он немного... Не в себе.");
-        yield return G.ShowSceneDialogAndWait(DialogPersones.Alice, "Чешир, не знала, что ты тоже любишь хейтить всех подряд?");
+        yield return G.ShowSceneDialogAndWait(DialogPersones.Alice, "Чешир, не знала, что ты тоже любишь канселить всех подряд?");
         yield return G.ShowSceneDialogAndWait(DialogPersones.Cat, "Что? Нет, я не такой! Ты скоро сама всё поймешь.");
 
         G.input.Blocked = false;
@@ -95,7 +98,7 @@ public class Level2Controller : SceneController
 
         yield return G.ShowSceneDialogAndWait(DialogPersones.Cat, "Я верю в тебя, Алиса! Ты справишься!");
 
-        G.CameraFocus(tiles.transform, 10.5f);
+        G.CameraFocus(tiles.transform, 11.86f);
 
         HatMasterItemDialog();
 
@@ -146,7 +149,7 @@ public class Level2Controller : SceneController
 
         yield return G.ShowSceneDialogAndWait(DialogPersones.HatMaster, "Нет-нет-нет, я же другое сказал! Заново!");
 
-        G.CameraFocus(tiles.transform, 10.5f);
+        G.CameraFocus(tiles.transform, 11.86f);
         HatMasterItemDialog();
 
         testInPause = false;
@@ -214,7 +217,7 @@ public class Level2Controller : SceneController
             return;
         }
 
-        G.ShowSceneDialog(DialogPersones.HatMaster, text, 10f);
+        G.ShowSceneDialog(DialogPersones.HatMaster, text, 30f);
     }
 
     private void ResetTest(bool alt)
