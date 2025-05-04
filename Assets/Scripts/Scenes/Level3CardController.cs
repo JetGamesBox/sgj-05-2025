@@ -7,6 +7,7 @@ using UnityEngine;
 
 public class Level3CardController : MonoBehaviour
 {
+    [SerializeField] public Transform pointToMove;
     [SerializeField] private float smooth = 20f;
     [SerializeField] public Sprite cardFace;
 
@@ -16,7 +17,7 @@ public class Level3CardController : MonoBehaviour
     private float rotation = 0f;
     private Vector3 destination;
 
-    private bool moved = false;
+    private bool moving = false;
     private bool flipped = false;
 
     private void Awake()
@@ -26,7 +27,7 @@ public class Level3CardController : MonoBehaviour
 
     private void Update()
     {
-        if (!moved)
+        if (!moving)
             return;
 
         transform.position = Vector3.SmoothDamp(transform.position, destination, ref movement, Time.deltaTime * smooth);
@@ -38,13 +39,18 @@ public class Level3CardController : MonoBehaviour
         if (!flipped && (Angle <= 90 || Angle >= 270))
         {
             flipped = true;
-            sp.sprite = cardFace;
+            SetSprite(cardFace);
         }                       
     }
 
-    public void MoveToPoint(Transform point)
+    public void MoveToPoint()
     {
-        moved = true;
-        destination = point.position;
+        moving = true;
+        destination = pointToMove.position;
+    }
+
+    public void SetSprite(Sprite sprite)
+    {
+        sp.sprite = sprite;
     }
 }

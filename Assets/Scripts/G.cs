@@ -1,3 +1,6 @@
+using System;
+using System.Collections;
+
 using Cinemachine;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -55,4 +58,17 @@ public static class G
     {
         currentScene.interactiveDialog.Show(who, message, delay);
     }
+    public static WaitForSeconds ShowSceneDialogAndWait(DialogPersones who, string message, float delay = 3f)
+    {
+        currentScene.interactiveDialog.Show(who, message, delay);
+
+        return new WaitForSeconds(delay);
+    }
+
+    public static WaitUntil ShowSceneDialogUntil(DialogPersones who, string message, Func<bool> callBack, float delay = 3f)
+    {
+        currentScene.interactiveDialog.Show(who, message, delay);
+        return new WaitUntil(callBack);
+    }
+
 }
