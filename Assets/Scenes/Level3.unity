@@ -1668,6 +1668,28 @@ MonoBehaviour:
   - {fileID: 1686925475, guid: 90c9450013c264346bcd306e66974941, type: 3}
   - {fileID: -1688319194, guid: 90c9450013c264346bcd306e66974941, type: 3}
   - {fileID: 1798521687, guid: 90c9450013c264346bcd306e66974941, type: 3}
+  fmodParameter:
+    Guid:
+      Data1: -1403192461
+      Data2: 1084844629
+      Data3: 2132384174
+      Data4: -1953340804
+    Path: event:/Music/Music_Level3
+  globalParameterName: CardsIntensity
+  CardPick:
+    Guid:
+      Data1: 1019467324
+      Data2: 1156932166
+      Data3: -1873933686
+      Data4: -524734096
+    Path: event:/Level3/Cards_Throwing
+  CardRiff:
+    Guid:
+      Data1: -1800062705
+      Data2: 1331713797
+      Data3: 363621558
+      Data4: -1473574145
+    Path: event:/Level3/Cards_Riffeling
 --- !u!1 &1259353216
 GameObject:
   m_ObjectHideFlags: 0

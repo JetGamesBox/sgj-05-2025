@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using FMODUnity;
+using FMOD.Studio;
 
 using UnityEngine;
 
@@ -11,6 +13,11 @@ public class Level3Controller: SceneController
     [SerializeField] private Transform levelCompleteTrigger;
     [SerializeField] private Level3CardController cardPrefab;
     [SerializeField] private List<Sprite> cardSprites = new List<Sprite>();
+
+    [SerializeField] private EventReference fmodParameter;
+    [SerializeField] private string globalParameterName = "CardsIntensity";
+    [SerializeField] private EventReference CardPick;
+    [SerializeField] private EventReference CardRiff;
 
     private bool cardPicked = false;
     private bool cardWaiting = false;
@@ -27,8 +34,9 @@ public class Level3Controller: SceneController
 
     private void Start()
     {
+
         StartCoroutine(CutSceneLevelBegin());
-    }
+    }   
 
     private IEnumerator CutSceneLevelBegin()
     {
@@ -59,6 +67,7 @@ public class Level3Controller: SceneController
         G.CameraFocus(gamingTable.transform, 8.3f);
 
         PrepeareRound("Round1");
+        RuntimeManager.PlayOneShot(CardRiff);
 
         for (int i = 0; i < 2; i++)
         {
@@ -67,13 +76,17 @@ public class Level3Controller: SceneController
             yield return G.ShowSceneDialogUntil(DialogPersones.Queen, "Тяни карту!", CardPicked, 30f);
 
             cardsList[i * 2].MoveToPoint();
+            RuntimeManager.PlayOneShot(CardPick);
 
             yield return new WaitForSeconds(2f);
 
             cardsList[i * 2 + 1].MoveToPoint();
+            RuntimeManager.PlayOneShot(CardPick);
         }
 
         yield return new WaitForSeconds(2f);
+
+        SetCardsIntensity(1);
 
         yield return G.ShowSceneDialogAndWait(DialogPersones.Alice, "У меня 21!");
         yield return G.ShowSceneDialogAndWait(DialogPersones.Queen, "Фи! Вообще-то в первом раунде надо было собрать 20!");
@@ -84,11 +97,16 @@ public class Level3Controller: SceneController
 
         MoveCardsInDeck();
 
+        RuntimeManager.PlayOneShot(CardRiff);
+
         yield return G.ShowSceneDialogAndWait(DialogPersones.Queen, "Вот и славно! Новый раунд!");
+
 
         ClearTable();
 
+
         PrepeareRound("Round2");
+
 
         for (int i = 0; i < 3; i++)
         {
@@ -97,10 +115,12 @@ public class Level3Controller: SceneController
             yield return G.ShowSceneDialogUntil(DialogPersones.Queen, "Тяни карту!", CardPicked, 30f);
 
             cardsList[i * 2].MoveToPoint();
+            RuntimeManager.PlayOneShot(CardPick);
 
             yield return new WaitForSeconds(2f);
 
             cardsList[i * 2 + 1].MoveToPoint();
+            RuntimeManager.PlayOneShot(CardPick);
         }
 
         yield return new WaitForSeconds(2f);
@@ -117,9 +137,14 @@ public class Level3Controller: SceneController
         yield return G.ShowSceneDialogAndWait(DialogPersones.Queen, "Глупости! Правило одно: Королева всегда права!");
         yield return G.ShowSceneDialogAndWait(DialogPersones.Alice, "...", 1f);
 
+        RuntimeManager.PlayOneShot(CardRiff);
+
+        SetCardsIntensity(2);
+
         ClearTable();
 
-        PrepeareRound("Round3");
+        PrepeareRound("Round3"); 
+
 
         for (int i = 0; i < 3; i++)
         {
@@ -128,13 +153,17 @@ public class Level3Controller: SceneController
             yield return G.ShowSceneDialogUntil(DialogPersones.Queen, "Тяни карту!", CardPicked, 30f);
 
             cardsList[i * 2].MoveToPoint();
+            RuntimeManager.PlayOneShot(CardPick);
 
             yield return new WaitForSeconds(2f);
 
             cardsList[i * 2 + 1].MoveToPoint();
+            RuntimeManager.PlayOneShot(CardPick);
         }
 
         yield return new WaitForSeconds(2f);
+
+
 
         yield return G.ShowSceneDialogAndWait(DialogPersones.Queen, "О, как мне везёт! Для победы надо собрать как раз 33!");
         yield return G.ShowSceneDialogAndWait(DialogPersones.Queen, "Ах, девочка моя, сразу видно, что благородных кровей в тебе нет.");
@@ -163,6 +192,7 @@ public class Level3Controller: SceneController
             card.pointToMove = gamingTable;
             card.MoveToPoint();
         }
+
     }
 
     private void ClearTable()
@@ -181,6 +211,8 @@ public class Level3Controller: SceneController
         card.cardFace = sprite;
 
         cardsList.Add(card);
+
+
     }
 
     private Sprite CardSpriteByName(string name)
@@ -269,6 +301,7 @@ public class Level3Controller: SceneController
         }
 
         return cardPicked;
+
     }
 
     public bool CardWaiting()
@@ -292,5 +325,10 @@ public class Level3Controller: SceneController
             G.SwitchScene(Scenes.MainMenu);
             break;
         }
+    }
+    public void SetCardsIntensity(float levelIndex)
+    {
+        levelIndex = Mathf.Clamp(levelIndex, 0, 2); // 0-2 for 3 labels
+        RuntimeManager.StudioSystem.setParameterByName(globalParameterName, levelIndex);
     }
 }

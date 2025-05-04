@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7444275558628507112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/CardsIntensity
+  m_EditorClassIdentifier: 
+  Name: CardsIntensity
+  StudioPath: parameter:/CardsIntensity
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 1749828462
+    data2: 2914573609
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Cards1
+  - Cards2
+  - Cards3
+  Exists: 1
 --- !u!114 &-7125890780361541588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,9 +118,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Music_Level3/Cards Intensity
+  m_Name: parameter:/Music_Level3/CardsIntensity
   m_EditorClassIdentifier: 
-  Name: Cards Intensity
+  Name: CardsIntensity
   StudioPath: 
   Min: 0
   Max: 2
@@ -102,7 +129,7 @@ MonoBehaviour:
     data1: 1749828462
     data2: 2914573609
   Type: 2
-  IsGlobal: 0
+  IsGlobal: 1
   Labels:
   - Cards1
   - Cards2
@@ -356,12 +383,13 @@ MonoBehaviour:
   - {fileID: -2512014426195569009}
   - {fileID: -7125890780361541588}
   - {fileID: 8649736745385492328}
-  EditorParameters: []
+  EditorParameters:
+  - {fileID: -7444275558628507112}
   MasterBanks:
   - {fileID: 5940841754906907819}
   StringsBanks:
   - {fileID: 80850964699152160}
-  cacheTime: 638819219247461951
+  cacheTime: 638819544456076839
   cacheVersion: 131846
 --- !u!114 &80850964699152160
 MonoBehaviour:
@@ -378,10 +406,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638819219247461951
+  lastModified: 638819544456076839
   FileSizes:
   - Name: 
-    Value: 1930
+    Value: 1928
   Exists: 1
 --- !u!114 &192550964512252562
 MonoBehaviour:
@@ -486,7 +514,7 @@ MonoBehaviour:
   - {fileID: -5658604367657773237}
   MinDistance: 1
   MaxDistance: 20
-  Length: 75064
+  Length: 77056
 --- !u!114 &3175149894413134531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -611,7 +639,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 638819219247426928
+  lastModified: 638819544456031791
   FileSizes: []
   Exists: 1
 --- !u!114 &6204207189276110295
