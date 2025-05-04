@@ -12,14 +12,17 @@ public class Level3Controller : SceneController
 
     protected override void Awake()
     {
-        gamingTable.gameObject.SetActive(false);
-        
+        //gamingTable.gameObject.SetActive(false);
+
         base.Awake();
+
+
+        G.CameraFocus(gamingTable, 9f);
     }
 
     private void Start()
     {
-        StartCoroutine(CutSceneLevelBegin());
+        //StartCoroutine(CutSceneLevelBegin());
     }
 
     private IEnumerator CutSceneLevelBegin()
@@ -49,7 +52,7 @@ public class Level3Controller : SceneController
 
         player.ForceVelocity(Vector2.up);
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(5f);
 
         G.ShowSceneDialog(DialogPersones.Queen, "Выигрывает тот, кто первым соберет это число у себя.", 3f);
 
