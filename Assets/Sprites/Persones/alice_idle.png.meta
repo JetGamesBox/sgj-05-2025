@@ -147,7 +147,7 @@ TextureImporter:
       name: alice_idle_1
       rect:
         serializedVersion: 2
-        x: 246
+        x: 250
         y: 0
         width: 250
         height: 400
@@ -168,9 +168,9 @@ TextureImporter:
       name: alice_idle_2
       rect:
         serializedVersion: 2
-        x: 498
+        x: 500
         y: 0
-        width: 249.8
+        width: 250
         height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -189,9 +189,9 @@ TextureImporter:
       name: alice_idle_3
       rect:
         serializedVersion: 2
-        x: 747
+        x: 750
         y: 0
-        width: 249.8
+        width: 250
         height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -210,9 +210,9 @@ TextureImporter:
       name: alice_idle_4
       rect:
         serializedVersion: 2
-        x: 996
+        x: 999
         y: 0
-        width: 249.8
+        width: 250
         height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

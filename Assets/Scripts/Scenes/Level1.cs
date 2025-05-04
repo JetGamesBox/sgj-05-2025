@@ -51,7 +51,12 @@ public class Level1Controller : SceneController
         G.CameraFocus(worm);
 
         yield return G.ShowSceneDialogAndWait(DialogPersones.Worm, "Ты... кто... такая?");
+
+        G.CameraFocus(player.transform);
+
         yield return G.ShowSceneDialogAndWait(DialogPersones.Alice, "Не очень-то вежливое начало беседы!");
+
+        G.CameraFocus(worm);
 
         yield return G.ShowSceneDialogAndWait(DialogPersones.Worm, "Ты глитч? Ошибка... Уходи!", 2f);
 

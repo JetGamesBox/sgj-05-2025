@@ -63,7 +63,9 @@ public class Level2Tile : MonoBehaviour
     public void ResetChecked(bool value = false)
     {
         @checked = value;
-        itemAnimator.SetBool("Activated", @checked);
-        tileSpriteRenderer.color = tileStartColor;
+        itemAnimator?.SetBool("Activated", @checked);
+
+        if (tileSpriteRenderer != null)
+            tileSpriteRenderer.color = tileStartColor;
     }
 }
