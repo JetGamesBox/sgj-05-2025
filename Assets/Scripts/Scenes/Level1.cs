@@ -28,22 +28,16 @@ public class Level1Controller : SceneController
     {
         G.input.Blocked = true;
 
-        G.ShowSceneDialog(DialogPersones.Cat, "Алиса, ну что ты опять переходишь по подозрительным ссылкам?$$$Ты в даркнете!", 2.5f);
-
-        yield return new WaitForSeconds(6f);
-
-        G.ShowSceneDialog(DialogPersones.Alice, "Кто ты? Что это за место?$$$И что мне теперь делать?", 2.5f);
-
-        yield return new WaitForSeconds(6f);
-
-        G.ShowSceneDialog(DialogPersones.Cat, "Чтобы выбраться отсюда, надо сжать сознание!$$$Иначе фаерволл не пропустит!", 2.5f);
-
-        yield return new WaitForSeconds(6f);
+        yield return G.ShowSceneDialogAndWait(DialogPersones.Alice, "Ой, где это я?");
+        yield return G.ShowSceneDialogAndWait(DialogPersones.Cat, "Алиса, ну что ты опять переходишь по подозрительным ссылкам?");
+        yield return G.ShowSceneDialogAndWait(DialogPersones.Alice, "Чешир? Где я?", 1.5f);
+        yield return G.ShowSceneDialogAndWait(DialogPersones.Cat, "Ты в даркнете! И так просто отсюда не выбраться!");
+        yield return G.ShowSceneDialogAndWait(DialogPersones.Alice, "Ой-ёй-ёй... Что же мне делать?");
+        yield return G.ShowSceneDialogAndWait(DialogPersones.Cat, "Надо сжать твоё сознание, иначе файрволл не пропустит.");
 
         G.CameraFocus(focusPointBegin);
-        G.ShowSceneDialog(DialogPersones.Cat, "Впереди лабиринт, и в конце первый архиватор!$$$Вперед!", 2f);
 
-        yield return new WaitForSeconds(6f);
+        yield return G.ShowSceneDialogAndWait(DialogPersones.Cat, "Первый архиватор в конце этого лабиринта. Вперёд!");
 
         G.CameraFocus(player.transform);
 
@@ -55,15 +49,16 @@ public class Level1Controller : SceneController
         G.input.Blocked = true;
 
         G.CameraFocus(worm);
-        G.ShowSceneDialog(DialogPersones.Worm, "Ты... кто... такая?$$$Глитч? Уходи!", 1f);
 
-        yield return new WaitForSeconds(4f);
+        yield return G.ShowSceneDialogAndWait(DialogPersones.Worm, "Ты... кто... такая?");
+        yield return G.ShowSceneDialogAndWait(DialogPersones.Alice, "Не очень-то вежливое начало беседы!");
+
+        yield return G.ShowSceneDialogAndWait(DialogPersones.Worm, "Ты глитч? Ошибка... Уходи!", 2f);
 
         completeTrigger.gameObject.SetActive(true);
         G.CameraFocus(completeTrigger);
-        G.ShowSceneDialog(DialogPersones.Cat, "Быстрее, прыгай в архиватор!");
 
-        yield return new WaitForSeconds(2f);
+        yield return G.ShowSceneDialogAndWait(DialogPersones.Cat, "Алиса, не отвлекайся! Скорее прыгай в первый архиватор!");
 
         G.CameraFocus(player.transform);
 

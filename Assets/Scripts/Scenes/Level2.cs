@@ -48,7 +48,7 @@ public class Level2Controller : SceneController
 
     private void Start()
     {
-        //StartCoroutine(CutSceneBegin());
+        StartCoroutine(CutSceneBegin());
     }
 
     private IEnumerator CutSceneBegin()
@@ -56,17 +56,10 @@ public class Level2Controller : SceneController
 
         G.input.Blocked = true;
 
-        G.ShowSceneDialog(DialogPersones.Cat, "Хорошо, ты стала легче!$$$ Теперь второй архиватор. Он под охраной любителя чая...$$$Он немного... Не в себе", 2.5f);
-
-        yield return new WaitForSeconds(8f);
-
-        G.ShowSceneDialog(DialogPersones.Alice, "И что мне нужно сделать?", 2f);
-
-        yield return new WaitForSeconds(2f);
-
-        G.ShowSceneDialog(DialogPersones.Cat, "Давай для начала найдем Шляпника. Ты справишься!", 3f);
-
-        yield return new WaitForSeconds(3f);
+        yield return G.ShowSceneDialogAndWait(DialogPersones.Cat, "Хорошо, ты стала легче! Теперь второй архиватор.");
+        yield return G.ShowSceneDialogAndWait(DialogPersones.Cat, "Его охраняет любитель чая. Он немного... Не в себе.");
+        yield return G.ShowSceneDialogAndWait(DialogPersones.Alice, "Чешир, не знала, что ты тоже любишь хейтить всех подряд?");
+        yield return G.ShowSceneDialogAndWait(DialogPersones.Cat, "Что? Нет, я не такой! Ты скоро сама всё поймешь.");
 
         G.input.Blocked = false;
 
@@ -83,32 +76,30 @@ public class Level2Controller : SceneController
 
         G.CameraFocus(hatMaster.transform);
 
-        G.ShowSceneDialog(DialogPersones.HatMaster, "А ты кто еще такая?$$$Впрочем неважно, сделайка мне чаю!", 2f);
+        yield return G.ShowSceneDialogAndWait(DialogPersones.HatMaster, "О-хо-хо? Гость? В моём холостяцком жныжнике?");
+        yield return G.ShowSceneDialogAndWait(DialogPersones.Alice, "Где-где?", 1.5f);
+        yield return G.ShowSceneDialogAndWait(DialogPersones.HatMaster, "Любишь чай? Я вот и дня не могу без крямкочки чая!");
+        yield return G.ShowSceneDialogAndWait(DialogPersones.Alice, "Чего-чего чая?", 1.5f);
 
-        yield return new WaitForSeconds(5f);
+        G.CameraFocus(player.transform);
 
-        G.ShowSceneDialog(DialogPersones.Cat, "Я же говорил, что он не в себе...", 2f);
-
-        yield return new WaitForSeconds(2f);
+        yield return G.ShowSceneDialogAndWait(DialogPersones.Cat, "А я говорил?");
+        yield return G.ShowSceneDialogAndWait(DialogPersones.Cat, "Просто сделай для него чай по его безумному рецепту.");
+        yield return G.ShowSceneDialogAndWait(DialogPersones.Alice, "Но как я пойму, что добавлять?");
 
         foreach (Level2Tile tile in tilesList)
             tile.ResetChecked(false);
 
-        G.CameraFocus(tiles.transform, 10.5f);
-
-        G.ShowSceneDialog(DialogPersones.Cat, "Сделай ему чай по его рецепту, и он тебя пропустит.", 4f);
-
-        yield return new WaitForSeconds(1.5f);
-
         cup.gameObject.SetActive(true);
         G.CameraFocus(cup.transform);
 
-        yield return new WaitForSeconds(1.5f);
+        yield return G.ShowSceneDialogAndWait(DialogPersones.Cat, "Я верю в тебя, Алиса! Ты справишься!");
 
         G.CameraFocus(tiles.transform, 10.5f);
-        G.input.Blocked = false;
 
         HatMasterItemDialog();
+
+        G.input.Blocked = false;
     }
 
     private IEnumerator CutSceneTestEnd()
@@ -120,27 +111,27 @@ public class Level2Controller : SceneController
         G.input.Blocked = true;
 
         G.CameraFocus(hatMaster.transform);
-        G.ShowSceneDialog(DialogPersones.HatMaster, "Ура, чай готов! Хочешь попробовать?$$$Нет? Ну, ладно!", 2f);
 
-        yield return new WaitForSeconds(5f);
+        yield return G.ShowSceneDialogAndWait(DialogPersones.HatMaster, "Ура, чай готов!");
 
         foreach (Level2Tile tile in tilesList)
             tile.ResetChecked(true);
 
         G.CameraFocus(player.transform);
 
-        G.ShowSceneDialog(DialogPersones.Cat, "Алиса, ты справилась!", 2f);
+        yield return G.ShowSceneDialogAndWait(DialogPersones.Cat, "Алиса, я в тебе не сомневался!");
 
-        yield return new WaitForSeconds(2f);
+        cup.gameObject.SetActive(false);
+        G.CameraFocus(hatMaster.transform);
+
+        yield return G.ShowSceneDialogAndWait(DialogPersones.HatMaster, "Как же он хорош! Чефирь, амбозия, каламбрамбрина!");
+        yield return G.ShowSceneDialogAndWait(DialogPersones.HatMaster, "Хочешь попробовать? Нет? Ну, ладно!");
 
         levelCompleteTrigger.gameObject.SetActive(true);
         G.CameraFocus(levelCompleteTrigger.transform);
 
-        G.ShowSceneDialog(DialogPersones.Cat, "Второй архиватор открыт!");
+        yield return G.ShowSceneDialogAndWait(DialogPersones.Cat, "Алиса, скорее в архиватор, пока он не допил чай!");
 
-        yield return new WaitForSeconds(2f);
-
-        cup.gameObject.SetActive(false);
         G.CameraFocus(player.transform);
 
         G.input.Blocked = false;
@@ -153,8 +144,7 @@ public class Level2Controller : SceneController
 
         G.CameraFocus(hatMaster.transform);
 
-        G.ShowSceneDialog(DialogPersones.HatMaster, "Нет-нет-нет! Все не так! Теперь все заново начинать!", 1.5f);
-        yield return new WaitForSeconds(2f);
+        yield return G.ShowSceneDialogAndWait(DialogPersones.HatMaster, "Нет-нет-нет, я же другое сказал! Заново!");
 
         G.CameraFocus(tiles.transform, 10.5f);
         HatMasterItemDialog();
@@ -170,8 +160,9 @@ public class Level2Controller : SceneController
 
         G.CameraFocus(hatMaster.transform);
 
-        G.ShowSceneDialog(DialogPersones.HatMaster, "Ты правда думала, что сможешь меня обхитрить?!$$$...$$$Возвращайся и сделай правильный чай!", 4f);
-        yield return new WaitForSeconds(13f);
+        yield return G.ShowSceneDialogAndWait(DialogPersones.HatMaster, "А где же чай?", 4f);
+        yield return G.ShowSceneDialogAndWait(DialogPersones.HatMaster, "В крямкочке совсем не чай!", 4f);
+        yield return G.ShowSceneDialogAndWait(DialogPersones.HatMaster, "Нет чая — нет хода дальше!", 4f);
 
         G.CameraFocus(tiles.transform, 10.5f);
         HatMasterItemDialog();
@@ -190,13 +181,13 @@ public class Level2Controller : SceneController
             text = "Толкай чашку к бамбуршлягцу!";
             break;
             case 1:
-            text = "Толкай к шклягонту!";
+            text = "Щепотку шклягонта!";
             break;
             case 2:
             text = "Добавь эшпендреконта! Толкай чашку туда!";
             break;
             case 3:
-            text = "промтер-чпобр! Быстрее-быстрее, толкай!";
+            text = "Промтер-чпобр! Быстрее-быстрее, толкай!";
             break;
             case 4:
             text = "Толкай чашку к бамбуршлягцу!";
@@ -205,19 +196,19 @@ public class Level2Controller : SceneController
             text = "Добавь эшпендреконта! Толкай чашку туда!";
             break;
             case 6:
-            text = "Толкай чашку к бамбуршлягцу!";
+            text = "Снова к бамбуршлягцу!";
             break;
             case 7:
-            text = "промтер-чпобр! Быстрее-быстрее, толкай!";
+            text = "Промтер-чпобр! Быстрее-быстрее, толкай!";
             break;
             case 8:
-            text = "Толкай к шклягонту!";
+            text = "Еще немного шклягонта!";
             break;
             case 9:
-            text = "Толкай чашку к бамбуршлягцу!";
+            text = "Бамбуршлягц! Последний!";
             break;
             case 10:
-            text = "Добавь эшпендреконта! Толкай чашку туда!";
+            text = "И завершить все эшпендреконтом!";
             break;
             default:
             return;
