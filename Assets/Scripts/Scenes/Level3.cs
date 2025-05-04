@@ -167,7 +167,14 @@ public class Level3Controller: SceneController
 
         yield return G.ShowSceneDialogAndWait(DialogPersones.Queen, "О, как мне везёт! Для победы надо собрать как раз 33!");
         yield return G.ShowSceneDialogAndWait(DialogPersones.Queen, "Ах, девочка моя, сразу видно, что благородных кровей в тебе нет.");
-        yield return G.ShowSceneDialogAndWait(DialogPersones.Cat, "Королева жуликов! Долго ты еще будет правила на ходу менять?");
+        yield return G.ShowSceneDialogAndWait(DialogPersones.Cat, "Хсссс, ты кого в песочницу отправляешь, а? Королева жуликов!");
+
+        gamingTable.gameObject.SetActive(false);
+
+        yield return G.ShowSceneDialogAndWait(DialogPersones.Cat, "Иди сама в песочке копайся!");
+
+        queen.gameObject.SetActive(false);
+
         yield return G.ShowSceneDialogAndWait(DialogPersones.Alice, "Чешир! Ты вернулся!", 1.5f);
 
         yield return G.ShowSceneDialogAndWait(DialogPersones.Cat, "Потом поговорим, Алиса!", 2f);
@@ -318,7 +325,8 @@ public class Level3Controller: SceneController
             break;
 
             case "DeckCardTrigger":
-            cardPicked = true;
+                if (cardWaiting)
+                    cardPicked = true;
             break;
 
             case "LevelComplete":

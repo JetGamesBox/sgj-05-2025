@@ -1,10 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Threading;
-
-using Unity.VisualScripting;
-
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,8 +8,9 @@ public class InteractiveDialogController : MonoBehaviour
 {
     [SerializeField] private List<Persone> persones = new List<Persone>();
 
-    private Image icon;
-    private Image border;
+    private UnityEngine.UI.Image icon;
+    private UnityEngine.UI.Image border;
+    private UnityEngine.UI.Image background;
     private Text textbox;
     private Animator animator;
 
@@ -29,8 +26,9 @@ public class InteractiveDialogController : MonoBehaviour
         foreach (Persone pers in persones)
             personesList.Add(pers.who, pers);
 
-        icon = transform.Find("Icon")?.GetComponent<Image>();
-        border = transform.Find("Border")?.GetComponent<Image>();
+        icon = transform.Find("Icon")?.GetComponent<UnityEngine.UI.Image>();
+        border = transform.Find("Border")?.GetComponent<UnityEngine.UI.Image>();
+        background = transform.Find("Background")?.GetComponent<UnityEngine.UI.Image>();
 
         gameObject.SetActive(true);
         textbox = transform.Find("Text").GetComponent<Text>();
@@ -47,6 +45,7 @@ public class InteractiveDialogController : MonoBehaviour
 
         icon.sprite = p.icon;
         border.color = p.color;
+        background.color = p.color;
         messageDelay = delay;
         messageQueue = new Queue<string>(strings.Split("$$$"));
 
